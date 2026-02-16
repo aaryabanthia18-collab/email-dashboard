@@ -2,9 +2,9 @@
   "summary": {
     "total_emails": 20,
     "categories": {
+      "finance": 2,
       "work": 8,
-      "other": 6,
-      "finance": 1,
+      "other": 5,
       "newsletter": 2,
       "shopping": 1,
       "personal": 1,
@@ -14,6 +14,26 @@
     "event_count": 4
   },
   "emails": [
+    {
+      "id": "21670",
+      "subject": "Aarya.banthia, Your  OpenClaw is exposed right now",
+      "from": "Matt Ganzak",
+      "date": "Mon, 16 Feb 2026 21:50:28 +0000",
+      "category": "finance",
+      "tasks": [],
+      "events": [],
+      "preview": "Here\u2019s how to lock it down in 30 minutes\r \r Hey Aarya.banthia,\r \r Welcome in. You signed up because you\u2019re building with OpenClaw, and I respect that...."
+    },
+    {
+      "id": "21669",
+      "subject": "167 comments & your first million",
+      "from": "\"Maria Wendt\"",
+      "date": "Mon, 16 Feb 2026 15:04:00 -0600",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "this works \u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c..."
+    },
     {
       "id": "21668",
       "subject": "Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
@@ -212,26 +232,6 @@
       "tasks": [],
       "events": [],
       "preview": "\ud83d\udd25 Alibaba unveils Qwen3.5 open weights, 19\u00d7 faster than Qwen3-Max\r OpenClaw on Kimi, GPT-5.2 writes physics paper, Copilot gets MCP support, Gemini hi..."
-    },
-    {
-      "id": "21650",
-      "subject": "\u26a1 The hire OpenAI couldn't lose",
-      "from": "OpenTools",
-      "date": "Mon, 16 Feb 2026 17:02:08 +0000 (UTC)",
-      "category": "work",
-      "tasks": [],
-      "events": [],
-      "preview": "View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/667f3e5e-1bca-45ad-ba52..."
-    },
-    {
-      "id": "21649",
-      "subject": "Reconnect with AI and create with precision ",
-      "from": "\"Freepik team\"",
-      "date": "Mon, 16 Feb 2026 17:01:09 +0000",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Create and edit images, video, and audio in the Freepik AI Suite      Freepik ( https://clicks.freepik.com/f/a/ioGECFE_AbDQiQ0R1GlVsQ~~/AAAHahA~/5GV-..."
     }
   ],
   "tasks": [],
@@ -253,5 +253,5 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T05:06:11.692739"
+  "last_updated": "2026-02-17T06:00:16.371511"
 }
