@@ -29,6 +29,9 @@
             margin-bottom: 2rem;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid #27272a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
         h1 {
@@ -42,6 +45,11 @@
             color: #71717a;
             font-size: 0.875rem;
             margin-top: 0.25rem;
+        }
+        
+        .last-updated {
+            color: #52525b;
+            font-size: 0.75rem;
         }
         
         .stats-grid {
@@ -194,7 +202,7 @@
             margin-top: 0.5rem;
         }
         
-        .task-item, .event-item {
+        .task-item {
             padding: 1rem 1.5rem;
             border-bottom: 1px solid #27272a;
             display: flex;
@@ -202,7 +210,7 @@
             gap: 0.75rem;
         }
         
-        .task-item:last-child, .event-item:last-child {
+        .task-item:last-child {
             border-bottom: none;
         }
         
@@ -221,34 +229,20 @@
             border-color: #71717a;
         }
         
+        .checkbox.checked {
+            background: #22c55e;
+            border-color: #22c55e;
+        }
+        
         .task-text {
             color: #d4d4d8;
             font-size: 0.875rem;
             line-height: 1.5;
         }
         
-        .event-icon {
-            width: 32px;
-            height: 32px;
-            background: #27272a;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-        
-        .event-details h4 {
-            color: #fafafa;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-        }
-        
-        .event-details p {
+        .task-text.completed {
+            text-decoration: line-through;
             color: #71717a;
-            font-size: 0.8125rem;
         }
         
         .empty-state {
@@ -301,13 +295,22 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
+        
+        .error {
+            padding: 2rem;
+            text-align: center;
+            color: #ef4444;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Email Dashboard</h1>
-            <p class="subtitle">Smart email summary & task extraction</p>
+            <div>
+                <h1>Email Dashboard</h1>
+                <p class="subtitle">Smart email summary & task extraction</p>
+            </div>
+            <div class="last-updated" id="last-updated"></div>
         </header>
         
         <div class="stats-grid" id="stats">
@@ -345,134 +348,112 @@
     </button>
     
     <script>
-        // Mock data for demo - in production, this would fetch from the Python backend
-        const mockData = {
-            "summary": {
-                "total_emails": 20,
-                "categories": {
-                    "work": 8,
-                    "newsletter": 6,
-                    "finance": 3,
-                    "shopping": 2,
-                    "other": 1
-                },
-                "task_count": 5,
-                "event_count": 2
-            },
-            "emails": [
-                {
-                    "subject": "Q4 Project Review - Action Items",
-                    "from": "Project Manager <pm@company.com>",
-                    "date": "Tue, 17 Feb 2026 09:30:00",
-                    "category": "work",
-                    "preview": "Please review the attached Q4 report and prepare feedback for tomorrow's meeting..."
-                },
-                {
-                    "subject": "Your Amazon Order #12345",
-                    "from": "Amazon <orders@amazon.com>",
-                    "date": "Tue, 17 Feb 2026 08:15:00",
-                    "category": "shopping",
-                    "preview": "Your order has been shipped and will arrive by Thursday..."
-                },
-                {
-                    "subject": "Monthly Statement Available",
-                    "from": "HDFC Bank <alerts@hdfcbank.com>",
-                    "date": "Mon, 16 Feb 2026 18:00:00",
-                    "category": "finance",
-                    "preview": "Your monthly credit card statement is now available..."
-                }
-            ],
-            "tasks": [
-                "Review Q4 report before tomorrow's meeting",
-                "Follow up with client on proposal",
-                "Schedule team call for project kickoff",
-                "Submit expense report by Friday",
-                "Prepare presentation for board meeting"
-            ],
-            "events": [
-                {
-                    "type": "meeting",
-                    "details": "Team standup at 10 AM tomorrow"
-                },
-                {
-                    "type": "call",
-                    "details": "Client call at 2 PM Wednesday"
-                }
-            ]
-        };
+        const API_URL = '/api/dashboard';
         
         function getCategoryClass(cat) {
             return 'cat-' + cat;
         }
         
         function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            const now = new Date();
-            const diff = now - date;
-            
-            if (diff < 24 * 60 * 60 * 1000) {
-                return 'Today';
-            } else if (diff < 48 * 60 * 60 * 1000) {
-                return 'Yesterday';
+            try {
+                const date = new Date(dateStr);
+                const now = new Date();
+                const diff = now - date;
+                
+                if (diff < 24 * 60 * 60 * 1000) {
+                    return 'Today';
+                } else if (diff < 48 * 60 * 60 * 1000) {
+                    return 'Yesterday';
+                }
+                return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            } catch {
+                return dateStr;
             }
-            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         }
         
-        function loadDashboard() {
-            // In production, fetch from API
-            // fetch('/api/dashboard').then(r => r.json()).then(data => {
-            
-            const data = mockData; // Using mock data for now
-            
-            // Update stats
-            const statsHtml = `
-                <div class="stat-card">
-                    <div class="stat-value">${data.summary.total_emails}</div>
-                    <div class="stat-label">Total Emails</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">${data.summary.task_count}</div>
-                    <div class="stat-label">Tasks</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">${data.summary.event_count}</div>
-                    <div class="stat-label">Events</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">${Object.keys(data.summary.categories).length}</div>
-                    <div class="stat-label">Categories</div>
-                </div>
-            `;
-            document.getElementById('stats').innerHTML = statsHtml;
-            
-            // Update emails
-            document.getElementById('email-count').textContent = data.emails.length;
-            const emailsHtml = data.emails.map(email => `
-                <div class="email-item">
-                    <div class="email-header">
-                        <span class="email-sender">${email.from.split('<')[0].trim()}</span>
-                        <span class="email-category ${getCategoryClass(email.category)}">${email.category}</span>
+        async function loadDashboard() {
+            try {
+                document.getElementById('stats').innerHTML = '<div class="loading"><div class="spinner"></div>Loading...</div>';
+                
+                const response = await fetch(API_URL);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                
+                const data = await response.json();
+                
+                // Update last updated time
+                document.getElementById('last-updated').textContent = 'Last updated: ' + new Date().toLocaleTimeString();
+                
+                // Update stats
+                const statsHtml = `
+                    <div class="stat-card">
+                        <div class="stat-value">${data.summary?.total_emails || 0}</div>
+                        <div class="stat-label">Total Emails</div>
                     </div>
-                    <div class="email-subject">${email.subject}</div>
-                    <div class="email-preview">${email.preview}</div>
-                    <div class="email-date">${formatDate(email.date)}</div>
-                </div>
-            `).join('');
-            document.getElementById('emails').innerHTML = emailsHtml || '<div class="empty-state">No emails found</div>';
-            
-            // Update tasks
-            document.getElementById('task-count').textContent = data.tasks.length;
-            const tasksHtml = data.tasks.map(task => `
-                <div class="task-item">
-                    <div class="checkbox"></div>
-                    <span class="task-text">${task}</span>
-                </div>
-            `).join('');
-            document.getElementById('tasks').innerHTML = tasksHtml || '<div class="empty-state">No tasks found</div>';
+                    <div class="stat-card">
+                        <div class="stat-value">${data.summary?.task_count || 0}</div>
+                        <div class="stat-label">Tasks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${data.summary?.event_count || 0}</div>
+                        <div class="stat-label">Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${Object.keys(data.summary?.categories || {}).length}</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                `;
+                document.getElementById('stats').innerHTML = statsHtml;
+                
+                // Update emails
+                const emails = data.emails || [];
+                document.getElementById('email-count').textContent = emails.length;
+                const emailsHtml = emails.map(email => `
+                    <div class="email-item">
+                        <div class="email-header">
+                            <span class="email-sender">${email.from}</span>
+                            <span class="email-category ${getCategoryClass(email.category)}">${email.category}</span>
+                        </div>
+                        <div class="email-subject">${email.subject}</div>
+                        <div class="email-preview">${email.preview}</div>
+                        <div class="email-date">${formatDate(email.date)}</div>
+                    </div>
+                `).join('');
+                document.getElementById('emails').innerHTML = emailsHtml || '<div class="empty-state">No emails found</div>';
+                
+                // Update tasks
+                const tasks = data.tasks || [];
+                document.getElementById('task-count').textContent = tasks.length;
+                const tasksHtml = tasks.map((task, index) => `
+                    <div class="task-item">
+                        <div class="checkbox" onclick="toggleTask(this)"></div>
+                        <span class="task-text">${task}</span>
+                    </div>
+                `).join('');
+                document.getElementById('tasks').innerHTML = tasksHtml || '<div class="empty-state">No tasks found</div>';
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('stats').innerHTML = `<div class="error">
+                    Error loading data. Make sure the API server is running.
+                    <br><br>
+                    <button onclick="loadDashboard()" style="padding: 0.5rem 1rem; cursor: pointer;">Retry</button>
+                </div>`;
+            }
+        }
+        
+        function toggleTask(checkbox) {
+            checkbox.classList.toggle('checked');
+            const taskText = checkbox.nextElementSibling;
+            taskText.classList.toggle('completed');
         }
         
         // Load on page load
         loadDashboard();
+        
+        // Auto-refresh every 5 minutes
+        setInterval(loadDashboard, 5 * 60 * 1000);
     </script>
 </body>
 </html>
