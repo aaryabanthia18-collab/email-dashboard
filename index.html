@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e4e4e7;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #27272a;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: #fafafa;
+        }
+        
+        .subtitle {
+            color: #71717a;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+        
+        .stat-card:hover {
+            border-color: #3f3f46;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 200;
+            color: #fafafa;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: #71717a;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .panel {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .panel-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #27272a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .panel-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #a1a1aa;
+        }
+        
+        .panel-count {
+            background: #27272a;
+            color: #d4d4d8;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+        }
+        
+        .panel-content {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .email-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #27272a;
+            transition: background 0.15s;
+            cursor: pointer;
+        }
+        
+        .email-item:hover {
+            background: #27272a;
+        }
+        
+        .email-item:last-child {
+            border-bottom: none;
+        }
+        
+        .email-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .email-sender {
+            font-weight: 500;
+            color: #fafafa;
+            font-size: 0.875rem;
+        }
+        
+        .email-category {
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.125rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .cat-work { background: #1e3a5f; color: #60a5fa; }
+        .cat-finance { background: #14532d; color: #4ade80; }
+        .cat-shopping { background: #7c2d12; color: #fb923c; }
+        .cat-newsletter { background: #581c87; color: #c084fc; }
+        .cat-social { background: #831843; color: #f472b6; }
+        .cat-personal { background: #3f6212; color: #a3e635; }
+        .cat-other { background: #3f3f46; color: #a1a1aa; }
+        
+        .email-subject {
+            color: #d4d4d8;
+            font-size: 0.9375rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+        
+        .email-preview {
+            color: #71717a;
+            font-size: 0.8125rem;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .email-date {
+            color: #52525b;
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        
+        .task-item, .event-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #27272a;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .task-item:last-child, .event-item:last-child {
+            border-bottom: none;
+        }
+        
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #3f3f46;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        
+        .checkbox:hover {
+            border-color: #71717a;
+        }
+        
+        .task-text {
+            color: #d4d4d8;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        .event-icon {
+            width: 32px;
+            height: 32px;
+            background: #27272a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .event-details h4 {
+            color: #fafafa;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .event-details p {
+            color: #71717a;
+            font-size: 0.8125rem;
+        }
+        
+        .empty-state {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: #52525b;
+        }
+        
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            color: #71717a;
+        }
+        
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #27272a;
+            border-top-color: #fafafa;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 0.75rem;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .refresh-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #fafafa;
+            color: #0a0a0f;
+            border: none;
+            padding: 0.875rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Dashboard</h1>
+            <p class="subtitle">Smart email summary & task extraction</p>
+        </header>
+        
+        <div class="stats-grid" id="stats">
+            <div class="loading"><div class="spinner"></div>Loading...</div>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Recent Emails</span>
+                    <span class="panel-count" id="email-count">0</span>
+                </div>
+                <div class="panel-content" id="emails">
+                    <div class="loading"><div class="spinner"></div>Loading emails...</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Extracted Tasks</span>
+                    <span class="panel-count" id="task-count">0</span>
+                </div>
+                <div class="panel-content" id="tasks">
+                    <div class="loading"><div class="spinner"></div>Analyzing tasks...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="refresh-btn" onclick="loadDashboard()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+        </svg>
+        Refresh
+    </button>
+    
+    <script>
+        // Mock data for demo - in production, this would fetch from the Python backend
+        const mockData = {
+            "summary": {
+                "total_emails": 20,
+                "categories": {
+                    "work": 8,
+                    "newsletter": 6,
+                    "finance": 3,
+                    "shopping": 2,
+                    "other": 1
+                },
+                "task_count": 5,
+                "event_count": 2
+            },
+            "emails": [
+                {
+                    "subject": "Q4 Project Review - Action Items",
+                    "from": "Project Manager <pm@company.com>",
+                    "date": "Tue, 17 Feb 2026 09:30:00",
+                    "category": "work",
+                    "preview": "Please review the attached Q4 report and prepare feedback for tomorrow's meeting..."
+                },
+                {
+                    "subject": "Your Amazon Order #12345",
+                    "from": "Amazon <orders@amazon.com>",
+                    "date": "Tue, 17 Feb 2026 08:15:00",
+                    "category": "shopping",
+                    "preview": "Your order has been shipped and will arrive by Thursday..."
+                },
+                {
+                    "subject": "Monthly Statement Available",
+                    "from": "HDFC Bank <alerts@hdfcbank.com>",
+                    "date": "Mon, 16 Feb 2026 18:00:00",
+                    "category": "finance",
+                    "preview": "Your monthly credit card statement is now available..."
+                }
+            ],
+            "tasks": [
+                "Review Q4 report before tomorrow's meeting",
+                "Follow up with client on proposal",
+                "Schedule team call for project kickoff",
+                "Submit expense report by Friday",
+                "Prepare presentation for board meeting"
+            ],
+            "events": [
+                {
+                    "type": "meeting",
+                    "details": "Team standup at 10 AM tomorrow"
+                },
+                {
+                    "type": "call",
+                    "details": "Client call at 2 PM Wednesday"
+                }
+            ]
+        };
+        
+        function getCategoryClass(cat) {
+            return 'cat-' + cat;
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            const now = new Date();
+            const diff = now - date;
+            
+            if (diff < 24 * 60 * 60 * 1000) {
+                return 'Today';
+            } else if (diff < 48 * 60 * 60 * 1000) {
+                return 'Yesterday';
+            }
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+        
+        function loadDashboard() {
+            // In production, fetch from API
+            // fetch('/api/dashboard').then(r => r.json()).then(data => {
+            
+            const data = mockData; // Using mock data for now
+            
+            // Update stats
+            const statsHtml = `
+                <div class="stat-card">
+                    <div class="stat-value">${data.summary.total_emails}</div>
+                    <div class="stat-label">Total Emails</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${data.summary.task_count}</div>
+                    <div class="stat-label">Tasks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${data.summary.event_count}</div>
+                    <div class="stat-label">Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${Object.keys(data.summary.categories).length}</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+            `;
+            document.getElementById('stats').innerHTML = statsHtml;
+            
+            // Update emails
+            document.getElementById('email-count').textContent = data.emails.length;
+            const emailsHtml = data.emails.map(email => `
+                <div class="email-item">
+                    <div class="email-header">
+                        <span class="email-sender">${email.from.split('<')[0].trim()}</span>
+                        <span class="email-category ${getCategoryClass(email.category)}">${email.category}</span>
+                    </div>
+                    <div class="email-subject">${email.subject}</div>
+                    <div class="email-preview">${email.preview}</div>
+                    <div class="email-date">${formatDate(email.date)}</div>
+                </div>
+            `).join('');
+            document.getElementById('emails').innerHTML = emailsHtml || '<div class="empty-state">No emails found</div>';
+            
+            // Update tasks
+            document.getElementById('task-count').textContent = data.tasks.length;
+            const tasksHtml = data.tasks.map(task => `
+                <div class="task-item">
+                    <div class="checkbox"></div>
+                    <span class="task-text">${task}</span>
+                </div>
+            `).join('');
+            document.getElementById('tasks').innerHTML = tasksHtml || '<div class="empty-state">No tasks found</div>';
+        }
+        
+        // Load on page load
+        loadDashboard();
+    </script>
+</body>
+</html>
