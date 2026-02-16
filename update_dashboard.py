@@ -23,24 +23,102 @@ def get_email_config():
                 app_pass = line.split('=')[1].strip().strip('"')
         return email_addr, app_pass
 
-def extract_tasks(body):
-    """Extract potential tasks from email body"""
+def extract_tasks(body, subject=""):
+    """Extract actionable tasks from email body and subject"""
     tasks = []
-    task_patterns = [
-        r'(?:please|kindly|need to|should|must|todo|to-do|action item|follow up|deadline)[\s:]*([^\.\n]+)',
-        r'\b(due by|due on|deadline|complete by|finish by)[\s:]*([^\.\n]+)',
-        r'\b(meeting|call|schedule|appointment)[\s:]*([^\.\n]+)',
-    ]
-    for pattern in task_patterns:
-        matches = re.findall(pattern, body, re.IGNORECASE)
-        for match in matches:
-            if isinstance(match, tuple):
-                task = ' '.join(match).strip()
-            else:
-                task = match.strip()
-            if task and len(task) > 10 and len(task) < 200:
+    text = subject + " " + body
+    
+    # Clean up text
+    text = re.sub(r'http[s]?://\S+', '', text)
+    text = re.sub(r'\s+', ' ', text)
+    
+    # Split into sentences for context
+    sentences = re.split(r'[.!?]+', text)
+    
+    for sent in sentences:
+        sent = sent.strip()
+        if len(sent) < 20 or len(sent) > 300:
+            continue
+        
+        task = None
+        
+        # Pattern 1: Direct action requests
+        if re.search(r'\b(please|kindly)\s+(review|approve|sign|submit|send|complete|update|check|confirm|read|look at)\b', sent, re.IGNORECASE):
+            match = re.search(r'(?:please|kindly)\s+(review|approve|sign|submit|send|complete|update|check|confirm|read|look at)\s+(.+)', sent, re.IGNORECASE)
+            if match:
+                task = f"{match.group(1).capitalize()} {match.group(2)}"
+        
+        # Pattern 2: Need to / Need you to
+        elif re.search(r'\b(we need to|you need to|i need you to|need to)\s+', sent, re.IGNORECASE):
+            match = re.search(r'(?:we need to|you need to|i need you to|need to)\s+(.+)', sent, re.IGNORECASE)
+            if match:
+                task = match.group(1).capitalize()
+        
+        # Pattern 3: Don't forget / Remember
+        elif re.search(r'\b(don\'t forget to|remember to|make sure to)\s+', sent, re.IGNORECASE):
+            match = re.search(r'(?:don\'t forget to|remember to|make sure to)\s+(.+)', sent, re.IGNORECASE)
+            if match:
+                task = match.group(1).capitalize()
+        
+        # Pattern 4: Action item
+        elif re.search(r'\baction item\b', sent, re.IGNORECASE):
+            match = re.search(r'action item[s]?:?\s*(.+)', sent, re.IGNORECASE)
+            if match:
+                task = match.group(1).capitalize()
+        
+        # Pattern 5: Schedule/Book/Arrange
+        elif re.search(r'\b(schedule|book|arrange|set up)\s+(?:a\s+)?(meeting|call|sync|discussion|demo|review)\b', sent, re.IGNORECASE):
+            match = re.search(r'(schedule|book|arrange|set up)\s+(?:a\s+)?(meeting|call|sync|discussion|demo|review)\s*(?:with\s+)?(.+)?', sent, re.IGNORECASE)
+            if match:
+                with_whom = match.group(3) if match.group(3) else ""
+                task = f"{match.group(1).capitalize()} {match.group(2)} {with_whom}".strip()
+        
+        # Pattern 6: Due/Deadline/By date
+        elif re.search(r'\b(due|deadline|by|before)\s+(Monday|Tuesday|Wednesday|Thursday|Friday|tomorrow|today|\d{1,2})', sent, re.IGNORECASE):
+            # Get the action before the deadline
+            match = re.search(r'(.+?)\s+(?:is\s+)?(?:due|deadline|by|before)\s+(Monday|Tuesday|Wednesday|Thursday|Friday|tomorrow|today|\d{1,2}[^\.\n]*)', sent, re.IGNORECASE)
+            if match:
+                action = match.group(1).strip()
+                deadline = match.group(2)
+                if len(action) > 10:
+                    task = f"{action} (Due {deadline})"
+        
+        # Pattern 7: Awaiting/Waiting for/Looking forward to
+        elif re.search(r'\b(awaiting|waiting for|looking forward to)\s+(?:your\s+)?(reply|response|feedback|input)', sent, re.IGNORECASE):
+            task = "Reply to email"
+        
+        # Pattern 8: Attached documents
+        elif re.search(r'\b(attached|find attached|see attached|please find|enclosed)\b', sent, re.IGNORECASE) and re.search(r'\b(document|file|report|proposal|invoice|contract|agreement)\b', sent, re.IGNORECASE):
+            match = re.search(r'(?:attached|enclosed)[^\.\n]*(document|file|report|proposal|invoice|contract|agreement)[^\.\n]*', sent, re.IGNORECASE)
+            if match:
+                doc_type = match.group(1)
+                task = f"Review attached {doc_type}"
+        
+        # Clean up and add task
+        if task:
+            # Remove extra whitespace
+            task = re.sub(r'\s+', ' ', task)
+            # Remove trailing punctuation
+            task = re.sub(r'[,;:]+$', '', task)
+            # Capitalize first letter
+            task = task[0].upper() + task[1:] if task else task
+            
+            if len(task) > 15 and len(task) < 200:
                 tasks.append(task)
-    return list(set(tasks))[:5]
+    
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_tasks = []
+    for task in tasks:
+        # Create a normalized version for comparison
+        normalized = re.sub(r'[^\w\s]', '', task.lower())
+        normalized = re.sub(r'\s+', ' ', normalized).strip()
+        
+        if normalized not in seen and len(normalized) > 10:
+            seen.add(normalized)
+            unique_tasks.append(task)
+    
+    return unique_tasks[:10]
 
 def extract_events(body, subject):
     """Extract potential events/meetings"""
@@ -122,7 +200,7 @@ def fetch_emails(limit=20):
                         pass
                 
                 category = categorize_email(subject, body)
-                tasks = extract_tasks(body)
+                tasks = extract_tasks(body, subject)
                 events = extract_events(body, subject)
                 
                 sender_name = from_addr.split('<')[0].strip() if '<' in from_addr else from_addr
