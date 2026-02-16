@@ -22,7 +22,8 @@ email_cache = {
 
 def get_email_config():
     """Read email credentials from config"""
-    with open('.email_config', 'r') as f:
+    config_path = '/root/.openclaw/workspace/.email_config'
+    with open(config_path, 'r') as f:
         lines = f.readlines()
         email_addr = None
         app_pass = None
