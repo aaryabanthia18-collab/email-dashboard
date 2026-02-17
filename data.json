@@ -2,10 +2,10 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "other": 6,
+      "other": 7,
       "finance": 2,
       "work": 7,
-      "newsletter": 2,
+      "newsletter": 1,
       "shopping": 1,
       "personal": 1,
       "social": 1
@@ -14,6 +14,16 @@
     "event_count": 4
   },
   "emails": [
+    {
+      "id": "21672",
+      "subject": "What your competitors see (that you don't)",
+      "from": "Neil Patel",
+      "date": "Tue, 17 Feb 2026 00:39:04 +0000 (UTC)",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "There is a blind spot in the industry right now.\r \r While everyone fights over the high-volume keywords, there are\r thousands of long-tail keywords (..."
+    },
     {
       "id": "21671",
       "subject": "\ud83d\udc0e (Fire) horse power, baby",
@@ -222,16 +232,6 @@
       "tasks": [],
       "events": [],
       "preview": "AI Automation Society\r \r ( https://link.skool.com/ls/click?upn=u001.wK6x93jhdVos-2F3TofGJCJqYIach7-2FtMhH3n-2Fh9qG9l0GnWL4PQOS-2FZ5VkS4LpRux6cLnt8iw..."
-    },
-    {
-      "id": "21652",
-      "subject": "Tomorrow: Building an Infinite Canvas App in Replit",
-      "from": "\"Replit\"",
-      "date": "Mon, 16 Feb 2026 17:22:53 +0000",
-      "category": "newsletter",
-      "tasks": [],
-      "events": [],
-      "preview": "<https://luma.com/q7pcvd7v>   Join us for a Live Build Session where we use the Replit Agent to build an  Infinite Canvas App in real time using the T..."
     }
   ],
   "tasks": [],
@@ -253,5 +253,5 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T08:00:21.838123"
+  "last_updated": "2026-02-17T09:00:42.351562"
 }
