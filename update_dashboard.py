@@ -289,6 +289,47 @@ def generate_hourly_summary(emails):
     
     return generate_summary(recent_emails)
 
+def generate_bullet_summary(emails):
+    """Generate bullet-pointed summary of email contents"""
+    if not emails:
+        return []
+    
+    bullets = []
+    
+    for e in emails[:10]:  # Summarize top 10 emails
+        subject = e['subject']
+        body = e.get('body', '')[:500]  # First 500 chars
+        sender = e['from']
+        
+        # Generate a one-line summary based on email type
+        summary = ""
+        
+        # Check for common patterns
+        subject_lower = subject.lower()
+        
+        if any(word in subject_lower for word in ['failed', 'error', 'issue', 'problem', 'alert']):
+            summary = f"⚠️ **{sender}**: Issue detected - {subject}"
+        elif any(word in subject_lower for word in ['success', 'completed', 'done', 'confirmed']):
+            summary = f"✅ **{sender}**: Completed successfully - {subject}"
+        elif any(word in subject_lower for word in ['welcome', 'new', 'joined', 'created']):
+            summary = f"🎉 **{sender}**: New account/setup - {subject}"
+        elif any(word in subject_lower for word in ['sign in', 'login', 'access', 'security']):
+            summary = f"🔐 **{sender}**: Security/Access activity - {subject}"
+        elif any(word in subject_lower for word in ['invoice', 'payment', 'bill', 'receipt']):
+            summary = f"💰 **{sender}**: Financial document - {subject}"
+        elif any(word in subject_lower for word in ['meeting', 'call', 'zoom', 'calendar']):
+            summary = f"📅 **{sender}**: Meeting/Call related - {subject}"
+        elif any(word in subject_lower for word in ['update', 'newsletter', 'digest']):
+            summary = f"📰 **{sender}**: Newsletter/Update - {subject}"
+        elif 're:' in subject_lower or 'fwd:' in subject_lower:
+            summary = f"💬 **{sender}**: Thread reply - {subject}"
+        else:
+            summary = f"📧 **{sender}**: {subject}"
+        
+        bullets.append(summary)
+    
+    return bullets
+
 def generate_dashboard():
     """Generate dashboard data"""
     print(f"[{datetime.now()}] Fetching emails...")
@@ -307,6 +348,7 @@ def generate_dashboard():
     # Generate summaries
     tldr_summary = generate_summary(emails)
     hourly_summary = generate_hourly_summary(emails)
+    bullet_summaries = generate_bullet_summary(emails)
     
     dashboard_data = {
         'summary': {
@@ -315,7 +357,8 @@ def generate_dashboard():
             'task_count': len(all_tasks),
             'event_count': len(all_events),
             'tldr': tldr_summary,
-            'hourly_summary': hourly_summary
+            'hourly_summary': hourly_summary,
+            'bullet_summary': bullet_summaries
         },
         'emails': emails,
         'tasks': list(set(all_tasks))[:10],

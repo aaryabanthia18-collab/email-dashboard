@@ -130,6 +130,45 @@
             color: #e4e4e7;
         }
         
+        .bullet-box {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .bullet-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #a1a1aa;
+            margin-bottom: 1rem;
+        }
+        
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .bullet-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #27272a;
+            font-size: 0.9375rem;
+            line-height: 1.5;
+            color: #d4d4d8;
+        }
+        
+        .bullet-item:last-child {
+            border-bottom: none;
+        }
+        
+        .bullet-item strong {
+            color: #fafafa;
+            font-weight: 500;
+        }
+        
         .dashboard-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -343,6 +382,11 @@
             <div class="summary-text" id="tldr-text"></div>
         </div>
         
+        <div class="bullet-box" id="bullet-summary" style="display: none;">
+            <div class="bullet-title">📋 Email Summaries</div>
+            <ul class="bullet-list" id="bullet-list"></ul>
+        </div>
+        
         <div class="stats-grid" id="stats">
             <div class="loading"><div class="spinner"></div>Loading...</div>
         </div>
@@ -413,6 +457,15 @@
             if (data.summary?.hourly_summary) {
                 document.getElementById('hourly-summary').style.display = 'block';
                 document.getElementById('hourly-text').textContent = data.summary.hourly_summary;
+            }
+            
+            // Update bullet summaries
+            if (data.summary?.bullet_summary && data.summary.bullet_summary.length > 0) {
+                document.getElementById('bullet-summary').style.display = 'block';
+                const bulletHtml = data.summary.bullet_summary.map(item => 
+                    `<li class="bullet-item">${item}</li>`
+                ).join('');
+                document.getElementById('bullet-list').innerHTML = bulletHtml;
             }
             
             // Update stats

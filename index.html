@@ -130,6 +130,45 @@
             color: #e4e4e7;
         }
         
+        .bullet-box {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .bullet-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #a1a1aa;
+            margin-bottom: 1rem;
+        }
+        
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .bullet-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #27272a;
+            font-size: 0.9375rem;
+            line-height: 1.5;
+            color: #d4d4d8;
+        }
+        
+        .bullet-item:last-child {
+            border-bottom: none;
+        }
+        
+        .bullet-item strong {
+            color: #fafafa;
+            font-weight: 500;
+        }
+        
         .dashboard-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -343,6 +382,11 @@
             <div class="summary-text" id="tldr-text"></div>
         </div>
         
+        <div class="bullet-box" id="bullet-summary" style="display: none;">
+            <div class="bullet-title">📋 Email Summaries</div>
+            <ul class="bullet-list" id="bullet-list"></ul>
+        </div>
+        
         <div class="stats-grid" id="stats">
             <div class="loading"><div class="spinner"></div>Loading...</div>
         </div>
@@ -386,7 +430,19 @@
     "task_count": 0,
     "event_count": 4,
     "tldr": "\ud83d\udce7 20 new emails | Top: 3 from GitHub, 2 from Vercel, 2 from aaryabanthia18@gmail.com | Categories: 7 other, 7 work, 2 newsletter",
-    "hourly_summary": "\ud83d\udce7 1 new email | Top: 1 from \"Chase AI Community (Skool)\" | Categories: 1 social"
+    "hourly_summary": "\ud83d\udce7 1 new email | Top: 1 from \"Chase AI Community (Skool)\" | Categories: 1 social",
+    "bullet_summary": [
+      "\ud83c\udf89 **\"Chase AI Community (Skool)\"**: New account/setup - 1 new notification since 8:17 am (Feb 17, 2026)",
+      "\ud83d\udce7 **Medium Daily Digest**: Why the Smartest People in Tech Are Quietly Panicking Right Now |\r\n Shane Collin...",
+      "\ud83d\udce7 **Neil Patel**: What your competitors see (that you don't)",
+      "\ud83d\udce7 **Finimize Daily**: \ud83d\udc0e (Fire) horse power, baby",
+      "\ud83d\udce7 **Matt Ganzak**: Aarya.banthia, Your  OpenClaw is exposed right now",
+      "\ud83d\udce7 **\"Maria Wendt\"**: 167 comments & your first million",
+      "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
+      "\ud83d\udd10 **GitHub**: Security/Access activity - [GitHub] A personal access token (classic) has been added to your\r\n account",
+      "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account",
+      "\ud83c\udf89 **GitHub**: New account/setup - [GitHub] A new SSH authentication public key was added to your\r\n account"
+    ]
   },
   "emails": [
     {
@@ -628,7 +684,7 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T12:41:13.509575"
+  "last_updated": "2026-02-17T12:46:32.794489"
 };
         
         function getCategoryClass(cat) {
@@ -670,6 +726,15 @@
             if (data.summary?.hourly_summary) {
                 document.getElementById('hourly-summary').style.display = 'block';
                 document.getElementById('hourly-text').textContent = data.summary.hourly_summary;
+            }
+            
+            // Update bullet summaries
+            if (data.summary?.bullet_summary && data.summary.bullet_summary.length > 0) {
+                document.getElementById('bullet-summary').style.display = 'block';
+                const bulletHtml = data.summary.bullet_summary.map(item => 
+                    `<li class="bullet-item">${item}</li>`
+                ).join('');
+                document.getElementById('bullet-list').innerHTML = bulletHtml;
             }
             
             // Update stats

@@ -12,7 +12,19 @@
     "task_count": 0,
     "event_count": 4,
     "tldr": "\ud83d\udce7 20 new emails | Top: 3 from GitHub, 2 from Vercel, 2 from aaryabanthia18@gmail.com | Categories: 7 other, 7 work, 2 newsletter",
-    "hourly_summary": "\ud83d\udce7 1 new email | Top: 1 from \"Chase AI Community (Skool)\" | Categories: 1 social"
+    "hourly_summary": "\ud83d\udce7 1 new email | Top: 1 from \"Chase AI Community (Skool)\" | Categories: 1 social",
+    "bullet_summary": [
+      "\ud83c\udf89 **\"Chase AI Community (Skool)\"**: New account/setup - 1 new notification since 8:17 am (Feb 17, 2026)",
+      "\ud83d\udce7 **Medium Daily Digest**: Why the Smartest People in Tech Are Quietly Panicking Right Now |\r\n Shane Collin...",
+      "\ud83d\udce7 **Neil Patel**: What your competitors see (that you don't)",
+      "\ud83d\udce7 **Finimize Daily**: \ud83d\udc0e (Fire) horse power, baby",
+      "\ud83d\udce7 **Matt Ganzak**: Aarya.banthia, Your  OpenClaw is exposed right now",
+      "\ud83d\udce7 **\"Maria Wendt\"**: 167 comments & your first million",
+      "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
+      "\ud83d\udd10 **GitHub**: Security/Access activity - [GitHub] A personal access token (classic) has been added to your\r\n account",
+      "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account",
+      "\ud83c\udf89 **GitHub**: New account/setup - [GitHub] A new SSH authentication public key was added to your\r\n account"
+    ]
   },
   "emails": [
     {
@@ -254,5 +266,5 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T12:41:13.509575"
+  "last_updated": "2026-02-17T12:46:32.794489"
 }
