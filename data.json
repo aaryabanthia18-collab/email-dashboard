@@ -12,7 +12,7 @@
     "task_count": 5,
     "event_count": 7,
     "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Matt Ganzak, 1 from Steven Cravotta, 1 from Maria Wendt | Categories: 8 work, 6 other, 2 finance | \u26a1 5 tasks detected",
-    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from Matt Ganzak, 1 from Steven Cravotta, 1 from Maria Wendt | Categories: 2 work, 1 finance, 1 personal | \u26a1 1 task detected",
+    "hourly_summary": "No new emails in the last hour.",
     "bullet_summary": [
       "\ud83d\udce7 **Matt Ganzak**: Aarya.banthia, Do these 3 things before lunch",
       "\ud83d\udce7 **Steven Cravotta**: Why I didn't quit when my app was struggling",
@@ -293,10 +293,10 @@
     }
   ],
   "tasks": [
-    "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)",
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
-    "Save my email address to your contacts, if interested",
     "Answer the ones they already get",
+    "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)",
+    "Save my email address to your contacts, if interested",
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Update to version 1"
   ],
   "events": [
@@ -329,7 +329,7 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T06:00:10.633735",
+  "last_updated": "2026-02-18T07:00:13.486973",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Matt Ganzak, 1 from Steven Cravotta, 1 from Maria Wendt. 4 emails may contain action items.",
     "total_emails": 20,
