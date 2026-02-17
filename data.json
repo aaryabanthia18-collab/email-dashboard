@@ -2,17 +2,18 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "other": 8,
+      "work": 9,
+      "other": 7,
       "newsletter": 1,
       "personal": 2,
-      "work": 8,
       "finance": 1
     },
     "task_count": 4,
-    "event_count": 7,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team | Categories: 8 other, 8 work, 2 personal | \u26a1 4 tasks detected",
-    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team | Categories: 2 other, 1 newsletter, 1 personal | \u26a1 1 task detected",
+    "event_count": 8,
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Guillermo Flor from Product..., 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\" | Categories: 9 work, 7 other, 2 personal | \u26a1 4 tasks detected",
+    "hourly_summary": "\ud83d\udce7 2 new emails | Top: 1 from Guillermo Flor from Product..., 1 from \"Topaz Labs\" | Categories: 1 work, 1 other",
     "bullet_summary": [
+      "\ud83d\udce7 **Guillermo Flor from Product...**: Carles Reina $300M ARR ElevenLabs Sales Playbook",
       "\ud83c\udf89 **\"Topaz Labs\"**: New account/setup - NEW models do this \ud83d\udc40",
       "\ud83d\udce7 **\"Eric at Bolt.new\"**: Claude Sonnet 4.6 just landed in Bolt",
       "\ud83d\udce7 **Orchids Team**: Claude Sonnet 4.6 available + Major Credit Usage Improvements",
@@ -21,11 +22,26 @@
       "\ud83d\udd10 **AlphaSignal**: Security/Access activity - \ud83d\udd12 OpenAI ChatGPT Lockdown Mode blocks web access, stops injections",
       "\ud83d\udce7 **ultrathink**: Something big is happening",
       "\ud83d\udce7 **Finimize Events**: \ud83d\uddd3\ufe0f Event reminder: Crypto In A Modern Portfolio",
-      "\ud83d\udce7 **ByteByteGo**: How Cloudflare Eliminates Cold Starts for Serverless Workers",
-      "\ud83d\udce7 **Rahul Jindal**: Build an AI Voice Agent in 15 Minutes (No Code)"
+      "\ud83d\udce7 **ByteByteGo**: How Cloudflare Eliminates Cold Starts for Serverless Workers"
     ]
   },
   "emails": [
+    {
+      "id": "21712",
+      "subject": "Carles Reina $300M ARR ElevenLabs Sales Playbook",
+      "from": "Guillermo Flor from Product...",
+      "date": "Tue, 17 Feb 2026 19:46:36 +0000",
+      "category": "work",
+      "tasks": [],
+      "events": [
+        {
+          "type": "teams",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "View this post on the web at https://www.productmarketfit.tech/p/carles-reina-300m-arr-elevenlabs\r \r In roughly ~3 years, ElevenLabs reached ~$330M AR...",
+      "ai_summary": "Notification from Guillermo Flor from Product.... Review contents for any important information."
+    },
     {
       "id": "21711",
       "subject": "NEW models do this \ud83d\udc40",
@@ -276,27 +292,20 @@
       ],
       "preview": "A while back, I tried using a dumb phone. Old school early 2000s\r brick with physical keys (think Blackberry but worse). The logic\r was simple: if I p...",
       "ai_summary": "Notification from Nick Saraev. Review contents for any important information."
-    },
-    {
-      "id": "21692",
-      "subject": "Start the Year of the Horse Ablaze",
-      "from": "\"Formlabs\"",
-      "date": "Tue, 17 Feb 2026 13:30:11 +0000",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "[Dark Grey Formlabs Logo](https://formlabs.com/)\r [Dark Grey Formlabs Logo](https://formlabs.com/)\r \r Start the Year of the Horse Ablaze\r \r Print Your...",
-      "ai_summary": "Notification from \"Formlabs\". Review contents for any important information."
     }
   ],
   "tasks": [
-    "Answer the ones they already get",
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Update to version 1",
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
+    "Answer the ones they already get",
     "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)"
   ],
   "events": [
     {
+      "type": "teams",
+      "details": "Detected in email"
+    },
+    {
       "type": "call",
       "details": "Detected in email"
     },
@@ -325,9 +334,9 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T03:00:52.994768",
+  "last_updated": "2026-02-18T04:00:09.127862",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team. 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Guillermo Flor from Product..., 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\". 3 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
