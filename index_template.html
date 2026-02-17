@@ -387,6 +387,11 @@
             <ul class="bullet-list" id="bullet-list"></ul>
         </div>
         
+        <div class="summary-box" id="ai-summary" style="display: none;">
+            <div class="summary-title">🤖 AI Summary</div>
+            <div class="summary-text" id="ai-text"></div>
+        </div>
+        
         <div class="stats-grid" id="stats">
             <div class="loading"><div class="spinner"></div>Loading...</div>
         </div>
@@ -468,6 +473,12 @@
                 document.getElementById('bullet-list').innerHTML = bulletHtml;
             }
             
+            // Update AI summary
+            if (data.ai_summary?.overall_summary) {
+                document.getElementById('ai-summary').style.display = 'block';
+                document.getElementById('ai-text').textContent = data.ai_summary.overall_summary;
+            }
+            
             // Update stats
             const statsHtml = `
                 <div class="stat-card">
@@ -500,6 +511,7 @@
                     </div>
                     <div class="email-subject">${email.subject}</div>
                     <div class="email-preview">${email.preview}</div>
+                    ${email.ai_summary ? `<div class="email-ai-summary" style="margin-top: 0.5rem; padding: 0.5rem; background: #27272a; border-radius: 6px; font-size: 0.8125rem; color: #a1a1aa;">🤖 ${email.ai_summary}</div>` : ''}
                     <div class="email-date">${formatDate(email.date)}</div>
                 </div>
             `).join('');
