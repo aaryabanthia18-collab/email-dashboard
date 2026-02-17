@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build script - Fetches emails, generates AI summaries, and builds static dashboard
+Build script - Fetches emails, generates AI summaries and executive briefing, and builds static dashboard
 """
 
 import subprocess
@@ -9,9 +9,13 @@ import subprocess
 print("Fetching emails...")
 subprocess.run(['python3', 'update_dashboard.py'])
 
-# Generate AI summaries
+# Generate AI summaries for each email
 print("\nGenerating AI summaries...")
 subprocess.run(['python3', 'summarize.py'])
+
+# Generate executive briefing
+print("\nGenerating executive briefing...")
+subprocess.run(['python3', 'executive_briefing.py'])
 
 # Read the data
 with open('data.json', 'r') as f:

@@ -286,9 +286,10 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T13:00:28.552701",
+  "last_updated": "2026-02-17T13:07:23.120502",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 3 from GitHub, 2 from Vercel, 2 from aaryabanthia18@gmail.com. \u26a0\ufe0f 1 emails require attention (failures/errors).",
-    "total_emails": 20
+    "total_emails": 20,
+    "executive_briefing": "You have 20 new emails waiting for you. The bulk of your messages are from 3 from GitHub, 2 from Vercel and 2 from aaryabanthia18@gmail.com. \u26a0\ufe0f There are 4 items flagged as urgent or requiring attention. I've also noted 2 security-related notifications\u2014likely from your recent account setups. I'd recommend addressing the urgent items first, then scanning through the remaining updates when you have a moment."
   }
 }

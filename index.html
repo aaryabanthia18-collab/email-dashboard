@@ -392,6 +392,11 @@
             <div class="summary-text" id="ai-text"></div>
         </div>
         
+        <div class="summary-box" id="executive-briefing" style="display: none; background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%); border-color: #3b82f6;">
+            <div class="summary-title" style="color: #60a5fa;">📊 Executive Briefing</div>
+            <div class="summary-text" id="briefing-text" style="font-size: 1.0625rem; line-height: 1.7;"></div>
+        </div>
+        
         <div class="stats-grid" id="stats">
             <div class="loading"><div class="spinner"></div>Loading...</div>
         </div>
@@ -709,10 +714,11 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T13:00:28.552701",
+  "last_updated": "2026-02-17T13:07:23.120502",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 3 from GitHub, 2 from Vercel, 2 from aaryabanthia18@gmail.com. \u26a0\ufe0f 1 emails require attention (failures/errors).",
-    "total_emails": 20
+    "total_emails": 20,
+    "executive_briefing": "You have 20 new emails waiting for you. The bulk of your messages are from 3 from GitHub, 2 from Vercel and 2 from aaryabanthia18@gmail.com. \u26a0\ufe0f There are 4 items flagged as urgent or requiring attention. I've also noted 2 security-related notifications\u2014likely from your recent account setups. I'd recommend addressing the urgent items first, then scanning through the remaining updates when you have a moment."
   }
 };
         
@@ -770,6 +776,12 @@
             if (data.ai_summary?.overall_summary) {
                 document.getElementById('ai-summary').style.display = 'block';
                 document.getElementById('ai-text').textContent = data.ai_summary.overall_summary;
+            }
+            
+            // Update Executive Briefing (NEW - prominent)
+            if (data.ai_summary?.executive_briefing) {
+                document.getElementById('executive-briefing').style.display = 'block';
+                document.getElementById('briefing-text').textContent = data.ai_summary.executive_briefing;
             }
             
             // Update stats
