@@ -2,31 +2,63 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "work": 6,
       "other": 8,
+      "work": 7,
       "newsletter": 2,
       "social": 2,
-      "shopping": 1,
-      "finance": 1
+      "shopping": 1
     },
     "task_count": 1,
     "event_count": 5,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 5 from Vercel, 1 from TLDR Dev, 1 from TLDR Marketing | Categories: 8 other, 6 work, 2 newsletter | \u26a1 1 task detected",
-    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from TLDR Dev, 1 from TLDR Marketing, 1 from The AI Report | Categories: 2 work, 1 other | \u26a1 1 task detected",
+    "tldr": "\ud83d\udce7 20 new emails | Top: 5 from Vercel, 1 from \"Formlabs\", 1 from TLDR Crypto | Categories: 8 other, 7 work, 2 newsletter | \u26a1 1 task detected",
+    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from \"Formlabs\", 1 from TLDR Crypto, 1 from TLDR Design | Categories: 2 other, 1 work",
     "bullet_summary": [
+      "\ud83d\udce7 **\"Formlabs\"**: Start the Year of the Horse Ablaze",
+      "\ud83d\udce7 **TLDR Crypto**: Harvard Build Ether Position \u2692\ufe0f,Animoca wins Dubai License \ud83e\udeaa, LatAm Stablecoins\u2696...",
+      "\ud83d\udce7 **TLDR Design**: Gemini Sketch to 3D \ud83e\udde0, Kid Designed Phone\ud83d\udcf1, Titans Logo Backlash \ud83c\udfc8",
       "\ud83d\udce7 **TLDR Dev**: Bulletproof React components \ud83d\udcaa, modern CSS\ud83c\udf31, protocols vs services \ud83d\udd10",
       "\ud83d\udce7 **TLDR Marketing**: How AI reads \ud83d\udc41\ufe0f, year of the\u201cfire horse\u201d \ud83d\udc0e, Gen Z buying stocks vs. homes\ud83d\udcb8",
       "\ud83d\udce7 **The AI Report**: ByteDance pledges copyright safeguards for Seedance",
       "\ud83d\udce7 **TLDR**: SpaceX drone swarms \ud83d\ude81, Apple video podcasts \ud83d\udcf1, AI isn't a bubble\ud83e\udd16",
       "\ud83d\udce7 **TLDR Product**: The cost of AI prototypes \ud83d\udcb8, managing multiple agents\ud83d\udd74\ufe0f, PM as a builder \ud83d\udd27",
       "\ud83d\udce7 **The Rundown AI**: \ud83e\udd4a Anthropic-Pentagon AI feud escalates",
-      "\ud83d\udce7 **\"Patata School\"**: Join us LIVE: Let\u2019s talk about the future of 3D \ud83d\udcc5",
-      "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
-      "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account",
-      "\u26a0\ufe0f **Google**: Issue detected - Security alert"
+      "\ud83d\udce7 **\"Patata School\"**: Join us LIVE: Let\u2019s talk about the future of 3D \ud83d\udcc5"
     ]
   },
   "emails": [
+    {
+      "id": "21692",
+      "subject": "Start the Year of the Horse Ablaze",
+      "from": "\"Formlabs\"",
+      "date": "Tue, 17 Feb 2026 13:30:11 +0000",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "[Dark Grey Formlabs Logo](https://formlabs.com/)\r [Dark Grey Formlabs Logo](https://formlabs.com/)\r \r Start the Year of the Horse Ablaze\r \r Print Your...",
+      "ai_summary": "Notification from \"Formlabs\". Review contents for any important information."
+    },
+    {
+      "id": "21691",
+      "subject": "Harvard Build Ether Position \u2692\ufe0f,Animoca wins Dubai License \ud83e\udeaa, LatAm Stablecoins\u2696...",
+      "from": "TLDR Crypto",
+      "date": "Tue, 17 Feb 2026 13:08:43 +0000",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "Harvard Management Company cut its iShares Bitcoin Trust holdings by\r about 21% in Q4 while opening a new $86.8 million\r position\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR Crypto. Review contents for any important information."
+    },
+    {
+      "id": "21690",
+      "subject": "Gemini Sketch to 3D \ud83e\udde0, Kid Designed Phone\ud83d\udcf1, Titans Logo Backlash \ud83c\udfc8",
+      "from": "TLDR Design",
+      "date": "Tue, 17 Feb 2026 13:07:19 +0000",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "Google upgraded Gemini 3 Deep Think to tackle complex scientific and\r engineering challenges, adding a sketch-to-3D modeling\r tool\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR Design. Review contents for any important information."
+    },
     {
       "id": "21689",
       "subject": "Bulletproof React components \ud83d\udcaa, modern CSS\ud83c\udf31, protocols vs services \ud83d\udd10",
@@ -238,39 +270,6 @@
       "events": [],
       "preview": "Stories for Aaryabanthia\r @aaryabanthia18 (https://medium.com/@aaryabanthia18?source=email-8a35a6466075-1771279922804-digest.reader-------------------...",
       "ai_summary": "Notification from Medium Daily Digest. Review contents for any important information."
-    },
-    {
-      "id": "21672",
-      "subject": "What your competitors see (that you don't)",
-      "from": "Neil Patel",
-      "date": "Tue, 17 Feb 2026 00:39:04 +0000 (UTC)",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "There is a blind spot in the industry right now.\r \r While everyone fights over the high-volume keywords, there are\r thousands of long-tail keywords (...",
-      "ai_summary": "Notification from Neil Patel. Review contents for any important information."
-    },
-    {
-      "id": "21671",
-      "subject": "\ud83d\udc0e (Fire) horse power, baby",
-      "from": "Finimize Daily",
-      "date": "Mon, 16 Feb 2026 18:23:32 -0500 (EST)",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "",
-      "ai_summary": "Notification from Finimize Daily. Review contents for any important information."
-    },
-    {
-      "id": "21670",
-      "subject": "Aarya.banthia, Your  OpenClaw is exposed right now",
-      "from": "Matt Ganzak",
-      "date": "Mon, 16 Feb 2026 21:50:28 +0000",
-      "category": "finance",
-      "tasks": [],
-      "events": [],
-      "preview": "Here\u2019s how to lock it down in 30 minutes\r \r Hey Aarya.banthia,\r \r Welcome in. You signed up because you\u2019re building with OpenClaw, and I respect that....",
-      "ai_summary": "Notification from Matt Ganzak. Review contents for any important information."
     }
   ],
   "tasks": [
@@ -298,9 +297,9 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-17T21:00:14.653461",
+  "last_updated": "2026-02-17T22:00:18.506645",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 5 from Vercel, 1 from TLDR Dev, 1 from TLDR Marketing. 1 emails may contain action items. \u26a0\ufe0f 4 emails require attention (failures/errors).",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 5 from Vercel, 1 from \"Formlabs\", 1 from TLDR Crypto. 1 emails may contain action items. \u26a0\ufe0f 4 emails require attention (failures/errors).",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
