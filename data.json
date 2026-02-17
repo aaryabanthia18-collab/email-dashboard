@@ -2,31 +2,74 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "other": 9,
-      "work": 6,
+      "other": 7,
+      "work": 7,
+      "newsletter": 2,
       "social": 2,
       "shopping": 1,
-      "newsletter": 1,
       "finance": 1
     },
     "task_count": 0,
-    "event_count": 0,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 7 from Vercel, 3 from GitHub, 1 from \"Patata School\" | Categories: 9 other, 6 work, 2 social",
-    "hourly_summary": "No new emails in the last hour.",
+    "event_count": 2,
+    "tldr": "\ud83d\udce7 20 new emails | Top: 6 from Vercel, 1 from TLDR, 1 from TLDR Product | Categories: 7 other, 7 work, 2 newsletter",
+    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from TLDR, 1 from TLDR Product, 1 from The Rundown AI | Categories: 1 other, 1 work, 1 newsletter",
     "bullet_summary": [
+      "\ud83d\udce7 **TLDR**: SpaceX drone swarms \ud83d\ude81, Apple video podcasts \ud83d\udcf1, AI isn't a bubble\ud83e\udd16",
+      "\ud83d\udce7 **TLDR Product**: The cost of AI prototypes \ud83d\udcb8, managing multiple agents\ud83d\udd74\ufe0f, PM as a builder \ud83d\udd27",
+      "\ud83d\udce7 **The Rundown AI**: \ud83e\udd4a Anthropic-Pentagon AI feud escalates",
       "\ud83d\udce7 **\"Patata School\"**: Join us LIVE: Let\u2019s talk about the future of 3D \ud83d\udcc5",
       "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
       "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account",
       "\u26a0\ufe0f **Google**: Issue detected - Security alert",
       "\ud83d\udce7 **Sergio Valsecchi**: A LoRA to install for Z-Image",
       "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
-      "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account",
-      "\u26a0\ufe0f **Vercel**: Issue detected - Failed production deployment on team 'aaryabanthia18-gmailcom's\r\n projects'",
-      "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [IMPORTANT] Account Incomplete",
-      "\ud83c\udf89 **\"Chase AI Community (Skool)\"**: New account/setup - 1 new notification since 8:17 am (Feb 17, 2026)"
+      "\ud83c\udf89 **Vercel**: New account/setup - New sign-in detected on your Vercel account"
     ]
   },
   "emails": [
+    {
+      "id": "21686",
+      "subject": "SpaceX drone swarms \ud83d\ude81, Apple video podcasts \ud83d\udcf1, AI isn't a bubble\ud83e\udd16",
+      "from": "TLDR",
+      "date": "Tue, 17 Feb 2026 11:27:42 +0000",
+      "category": "other",
+      "tasks": [],
+      "events": [
+        {
+          "type": "teams",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "SpaceX and xAI are competing in a secretive new Pentagon contract to\r produce voice-controlled autonomous drone swarming\r technology\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR. Review contents for any important information."
+    },
+    {
+      "id": "21685",
+      "subject": "The cost of AI prototypes \ud83d\udcb8, managing multiple agents\ud83d\udd74\ufe0f, PM as a builder \ud83d\udd27",
+      "from": "TLDR Product",
+      "date": "Tue, 17 Feb 2026 11:08:43 +0000",
+      "category": "work",
+      "tasks": [],
+      "events": [
+        {
+          "type": "teams",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "AI makes prototypes easy to create. Choose tools based on whether the\r work should validate ideas quickly or evolve into real\r products.\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR Product. Review contents for any important information."
+    },
+    {
+      "id": "21684",
+      "subject": "\ud83e\udd4a Anthropic-Pentagon AI feud escalates",
+      "from": "The Rundown AI",
+      "date": "Tue, 17 Feb 2026 11:08:08 +0000 (UTC)",
+      "category": "newsletter",
+      "tasks": [],
+      "events": [],
+      "preview": "^**[Read Online](https://www.therundown.ai/p/anthropic-pentagon-ai-feud-escalates?_bhlid=4eaa234680798ad3bdb45514b5705f029891f88c&jwt_token=eyJ0eXAiOi...",
+      "ai_summary": "Notification from The Rundown AI. Review contents for any important information."
+    },
     {
       "id": "21683",
       "subject": "Join us LIVE: Let\u2019s talk about the future of 3D \ud83d\udcc5",
@@ -213,46 +256,22 @@
       "events": [],
       "preview": "Hey aaryabanthia18-collab!\r \r A personal access token (classic) \"OpenClaw\" with admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:publ...",
       "ai_summary": "New authentication credentials added to your account. Verify this was intentional."
-    },
-    {
-      "id": "21666",
-      "subject": "New sign-in detected on your Vercel account",
-      "from": "Vercel",
-      "date": "Mon, 16 Feb 2026 20:17:03 +0000",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Vercel\r \r Hi aaryabanthia18-8536,\r \r Your Vercel account aaryabanthia18@gmail.com was recently\r signed-in from a new location, device or browser.\r \r L...",
-      "ai_summary": "Vercel account activity notification. Review for any issues."
-    },
-    {
-      "id": "21665",
-      "subject": "[GitHub] A new SSH authentication public key was added to your\r\n account",
-      "from": "GitHub",
-      "date": "Mon, 16 Feb 2026 12:16:37 -0800",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "The following SSH key was added to your account:\r \r OpenClaw Server\r SHA256:WPzHMbCWo4nBCuJ2U3vG3WllT3W0M6/+JyXfufdkN9Q\r \r If you believe this key was...",
-      "ai_summary": "New authentication credentials added to your account. Verify this was intentional."
-    },
-    {
-      "id": "21664",
-      "subject": "\ud83d\ude80 Your GitHub launch code",
-      "from": "GitHub",
-      "date": "Mon, 16 Feb 2026 12:12:15 -0800",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Here's your GitHub launch code!\r \r Continue signing up for GitHub by entering the code below:\r \r 73663095\r \r You can enter it by visiting the link bel...",
-      "ai_summary": "GitHub account notification. Check for any required actions."
     }
   ],
   "tasks": [],
-  "events": [],
-  "last_updated": "2026-02-17T19:00:32.110266",
+  "events": [
+    {
+      "type": "teams",
+      "details": "Detected in email"
+    },
+    {
+      "type": "teams",
+      "details": "Detected in email"
+    }
+  ],
+  "last_updated": "2026-02-17T20:00:15.488298",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 7 from Vercel, 3 from GitHub, 1 from \"Patata School\". \u26a0\ufe0f 5 emails require attention (failures/errors).",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 6 from Vercel, 1 from TLDR, 1 from TLDR Product. \u26a0\ufe0f 5 emails require attention (failures/errors).",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
