@@ -224,6 +224,71 @@ def fetch_emails(limit=20):
         print(f"Error fetching emails: {e}")
         return []
 
+def generate_summary(emails):
+    """Generate TL;DR summary of recent emails"""
+    if not emails:
+        return "No new emails in the last hour."
+    
+    # Count by sender
+    sender_counts = {}
+    for e in emails:
+        sender = e['from']
+        sender_counts[sender] = sender_counts.get(sender, 0) + 1
+    
+    # Get top senders
+    top_senders = sorted(sender_counts.items(), key=lambda x: x[1], reverse=True)[:3]
+    
+    # Count by category
+    cat_counts = {}
+    for e in emails:
+        cat = e['category']
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
+    
+    # Build summary
+    summary_parts = []
+    summary_parts.append(f"📧 {len(emails)} new email{'s' if len(emails) > 1 else ''}")
+    
+    # Add sender info
+    if top_senders:
+        sender_str = ", ".join([f"{count} from {sender}" for sender, count in top_senders])
+        summary_parts.append(f"Top: {sender_str}")
+    
+    # Add category breakdown
+    if cat_counts:
+        cat_str = ", ".join([f"{count} {cat}" for cat, count in sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)[:3]])
+        summary_parts.append(f"Categories: {cat_str}")
+    
+    # Add task count
+    all_tasks = []
+    for e in emails:
+        all_tasks.extend(e['tasks'])
+    if all_tasks:
+        summary_parts.append(f"⚡ {len(all_tasks)} task{'s' if len(all_tasks) > 1 else ''} detected")
+    
+    return " | ".join(summary_parts)
+
+def generate_hourly_summary(emails):
+    """Generate summary for emails from last hour only"""
+    from datetime import datetime, timedelta
+    import email.utils
+    
+    now = datetime.now()
+    one_hour_ago = now - timedelta(hours=1)
+    
+    recent_emails = []
+    for e in emails:
+        try:
+            # Parse email date
+            date_tuple = email.utils.parsedate_tz(e['date'])
+            if date_tuple:
+                email_time = datetime.fromtimestamp(email.utils.mktime_tz(date_tuple))
+                if email_time > one_hour_ago:
+                    recent_emails.append(e)
+        except:
+            pass
+    
+    return generate_summary(recent_emails)
+
 def generate_dashboard():
     """Generate dashboard data"""
     print(f"[{datetime.now()}] Fetching emails...")
@@ -239,12 +304,18 @@ def generate_dashboard():
         all_tasks.extend(e['tasks'])
         all_events.extend(e['events'])
     
+    # Generate summaries
+    tldr_summary = generate_summary(emails)
+    hourly_summary = generate_hourly_summary(emails)
+    
     dashboard_data = {
         'summary': {
             'total_emails': len(emails),
             'categories': categories,
             'task_count': len(all_tasks),
-            'event_count': len(all_events)
+            'event_count': len(all_events),
+            'tldr': tldr_summary,
+            'hourly_summary': hourly_summary
         },
         'emails': emails,
         'tasks': list(set(all_tasks))[:10],
@@ -257,6 +328,7 @@ def generate_dashboard():
         json.dump(dashboard_data, f, indent=2)
     
     print(f"[{datetime.now()}] Dashboard updated: {len(emails)} emails, {len(all_tasks)} tasks")
+    print(f"TL;DR: {tldr_summary}")
     return dashboard_data
 
 if __name__ == "__main__":

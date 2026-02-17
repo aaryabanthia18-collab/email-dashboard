@@ -86,6 +86,50 @@
             letter-spacing: 0.05em;
         }
         
+        .summary-box {
+            background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+            border: 1px solid #3f3f46;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .summary-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #a1a1aa;
+            margin-bottom: 0.5rem;
+        }
+        
+        .summary-text {
+            font-size: 1.125rem;
+            color: #fafafa;
+            line-height: 1.6;
+        }
+        
+        .hourly-box {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #22c55e;
+        }
+        
+        .hourly-label {
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #22c55e;
+            margin-bottom: 0.25rem;
+        }
+        
+        .hourly-text {
+            font-size: 1rem;
+            color: #e4e4e7;
+        }
+        
         .dashboard-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -289,6 +333,16 @@
             <div class="last-updated" id="last-updated">Loading...</div>
         </header>
         
+        <div class="hourly-box" id="hourly-summary" style="display: none;">
+            <div class="hourly-label">📊 Last Hour</div>
+            <div class="hourly-text" id="hourly-text"></div>
+        </div>
+        
+        <div class="summary-box" id="tldr-summary" style="display: none;">
+            <div class="summary-title">📝 TL;DR Summary</div>
+            <div class="summary-text" id="tldr-text"></div>
+        </div>
+        
         <div class="stats-grid" id="stats">
             <div class="loading"><div class="spinner"></div>Loading...</div>
         </div>
@@ -347,6 +401,18 @@
                 const date = new Date(data.last_updated);
                 document.getElementById('last-updated').textContent = 
                     'Last updated: ' + date.toLocaleString();
+            }
+            
+            // Update TL;DR summary
+            if (data.summary?.tldr) {
+                document.getElementById('tldr-summary').style.display = 'block';
+                document.getElementById('tldr-text').textContent = data.summary.tldr;
+            }
+            
+            // Update hourly summary
+            if (data.summary?.hourly_summary) {
+                document.getElementById('hourly-summary').style.display = 'block';
+                document.getElementById('hourly-text').textContent = data.summary.hourly_summary;
             }
             
             // Update stats
