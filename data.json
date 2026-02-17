@@ -2,29 +2,76 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "work": 10,
       "other": 8,
-      "finance": 1,
-      "personal": 1
+      "newsletter": 1,
+      "personal": 2,
+      "work": 8,
+      "finance": 1
     },
     "task_count": 4,
-    "event_count": 10,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Yasmin at Theory of Khaos, 1 from AlphaSignal, 1 from ultrathink | Categories: 10 work, 8 other, 1 finance | \u26a1 4 tasks detected",
-    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from Yasmin at Theory of Khaos, 1 from AlphaSignal, 1 from ultrathink | Categories: 3 work",
+    "event_count": 7,
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team | Categories: 8 other, 8 work, 2 personal | \u26a1 4 tasks detected",
+    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team | Categories: 2 other, 1 newsletter, 1 personal | \u26a1 1 task detected",
     "bullet_summary": [
+      "\ud83c\udf89 **\"Topaz Labs\"**: New account/setup - NEW models do this \ud83d\udc40",
+      "\ud83d\udce7 **\"Eric at Bolt.new\"**: Claude Sonnet 4.6 just landed in Bolt",
+      "\ud83d\udce7 **Orchids Team**: Claude Sonnet 4.6 available + Major Credit Usage Improvements",
+      "\ud83d\udce7 **OpenTools**: \ud83d\udca5 OpenAI's biggest ally just left",
       "\ud83d\udce7 **Yasmin at Theory of Khaos**: The method is yours. Here's what to do next.",
       "\ud83d\udd10 **AlphaSignal**: Security/Access activity - \ud83d\udd12 OpenAI ChatGPT Lockdown Mode blocks web access, stops injections",
       "\ud83d\udce7 **ultrathink**: Something big is happening",
       "\ud83d\udce7 **Finimize Events**: \ud83d\uddd3\ufe0f Event reminder: Crypto In A Modern Portfolio",
       "\ud83d\udce7 **ByteByteGo**: How Cloudflare Eliminates Cold Starts for Serverless Workers",
-      "\ud83d\udce7 **Rahul Jindal**: Build an AI Voice Agent in 15 Minutes (No Code)",
-      "\ud83d\udce7 **Mirek from Saleor**: Saleor didn't pivot into AI",
-      "\ud83d\udce7 **Neil Patel**: How to optimize E-commerce for AI search",
-      "\ud83d\udce7 **AmplifyME**: \u2b06\ufe0f\u00a0UK Unemployment Nears Covid High",
-      "\ud83d\udce7 **The Rundown Tech**: \ud83c\udf4f Apple's '2026 product blitz'"
+      "\ud83d\udce7 **Rahul Jindal**: Build an AI Voice Agent in 15 Minutes (No Code)"
     ]
   },
   "emails": [
+    {
+      "id": "21711",
+      "subject": "NEW models do this \ud83d\udc40",
+      "from": "\"Topaz Labs\"",
+      "date": "Tue, 17 Feb 2026 19:00:27 +0000",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "Get better photo & video results with latest releases that prioritize fidel=\r ity & accuracy=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=...",
+      "ai_summary": "Notification from \"Topaz Labs\". Review contents for any important information."
+    },
+    {
+      "id": "21710",
+      "subject": "Claude Sonnet 4.6 just landed in Bolt",
+      "from": "\"Eric at Bolt.new\"",
+      "date": "Tue, 17 Feb 2026 10:56:53 -0800",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "Your new daily driver is here\u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f...",
+      "ai_summary": "Notification from \"Eric at Bolt.new\". Review contents for any important information."
+    },
+    {
+      "id": "21709",
+      "subject": "Claude Sonnet 4.6 available + Major Credit Usage Improvements",
+      "from": "Orchids Team",
+      "date": "Tue, 17 Feb 2026 18:46:37 +0000",
+      "category": "newsletter",
+      "tasks": [
+        "Update to version 1"
+      ],
+      "events": [],
+      "preview": "Hi Aarya\r \u00a0\r Claude Sonnet 4.6 is now fully available for all Orchids users.\r \u00a0\r This is Anthropic\u2019s newest model and one of the most capable a...",
+      "ai_summary": "Notification from Orchids Team. Review contents for any important information."
+    },
+    {
+      "id": "21708",
+      "subject": "\ud83d\udca5 OpenAI's biggest ally just left",
+      "from": "OpenTools",
+      "date": "Tue, 17 Feb 2026 18:03:46 +0000 (UTC)",
+      "category": "personal",
+      "tasks": [],
+      "events": [],
+      "preview": "View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e39aad96-f0c2-4784-8a8b...",
+      "ai_summary": "Notification from OpenTools. Review contents for any important information."
+    },
     {
       "id": "21707",
       "subject": "The method is yours. Here's what to do next.",
@@ -240,71 +287,12 @@
       "events": [],
       "preview": "[Dark Grey Formlabs Logo](https://formlabs.com/)\r [Dark Grey Formlabs Logo](https://formlabs.com/)\r \r Start the Year of the Horse Ablaze\r \r Print Your...",
       "ai_summary": "Notification from \"Formlabs\". Review contents for any important information."
-    },
-    {
-      "id": "21691",
-      "subject": "Harvard Build Ether Position \u2692\ufe0f,Animoca wins Dubai License \ud83e\udeaa, LatAm Stablecoins\u2696...",
-      "from": "TLDR Crypto",
-      "date": "Tue, 17 Feb 2026 13:08:43 +0000",
-      "category": "work",
-      "tasks": [],
-      "events": [],
-      "preview": "Harvard Management Company cut its iShares Bitcoin Trust holdings by\r about 21% in Q4 while opening a new $86.8 million\r position\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
-      "ai_summary": "Notification from TLDR Crypto. Review contents for any important information."
-    },
-    {
-      "id": "21690",
-      "subject": "Gemini Sketch to 3D \ud83e\udde0, Kid Designed Phone\ud83d\udcf1, Titans Logo Backlash \ud83c\udfc8",
-      "from": "TLDR Design",
-      "date": "Tue, 17 Feb 2026 13:07:19 +0000",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Google upgraded Gemini 3 Deep Think to tackle complex scientific and\r engineering challenges, adding a sketch-to-3D modeling\r tool\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
-      "ai_summary": "Notification from TLDR Design. Review contents for any important information."
-    },
-    {
-      "id": "21689",
-      "subject": "Bulletproof React components \ud83d\udcaa, modern CSS\ud83c\udf31, protocols vs services \ud83d\udd10",
-      "from": "TLDR Dev",
-      "date": "Tue, 17 Feb 2026 12:11:37 +0000",
-      "category": "work",
-      "tasks": [],
-      "events": [
-        {
-          "type": "meeting",
-          "details": "Detected in email"
-        },
-        {
-          "type": "call",
-          "details": "Detected in email"
-        },
-        {
-          "type": "zoom",
-          "details": "Detected in email"
-        }
-      ],
-      "preview": "\u201cBulletproof\" React components are designed to withstand the\r \"hostile\" real-world conditions beyond the typical happy\r path\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
-      "ai_summary": "Notification from TLDR Dev. Review contents for any important information."
-    },
-    {
-      "id": "21688",
-      "subject": "How AI reads \ud83d\udc41\ufe0f, year of the\u201cfire horse\u201d \ud83d\udc0e, Gen Z buying stocks vs. homes\ud83d\udcb8",
-      "from": "TLDR Marketing",
-      "date": "Tue, 17 Feb 2026 12:07:42 +0000",
-      "category": "other",
-      "tasks": [
-        "Move beyond literal zodiac motifs"
-      ],
-      "events": [],
-      "preview": "The Year of the Fire Horse signals boldness. Brands need to move\r beyond literal zodiac motifs. Capsules should be positioned as\r collectible\r talisma...",
-      "ai_summary": "Notification from TLDR Marketing. Review contents for any important information."
     }
   ],
   "tasks": [
-    "Move beyond literal zodiac motifs",
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Answer the ones they already get",
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
+    "Update to version 1",
     "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)"
   ],
   "events": [
@@ -335,23 +323,11 @@
     {
       "type": "call",
       "details": "Detected in email"
-    },
-    {
-      "type": "meeting",
-      "details": "Detected in email"
-    },
-    {
-      "type": "call",
-      "details": "Detected in email"
-    },
-    {
-      "type": "zoom",
-      "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T02:01:06.122083",
+  "last_updated": "2026-02-18T03:00:52.994768",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Yasmin at Theory of Khaos, 1 from AlphaSignal, 1 from ultrathink. 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from \"Topaz Labs\", 1 from \"Eric at Bolt.new\", 1 from Orchids Team. 3 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
