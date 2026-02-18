@@ -3,30 +3,63 @@
     "total_emails": 20,
     "categories": {
       "finance": 2,
+      "other": 5,
+      "work": 9,
       "personal": 2,
-      "work": 8,
       "social": 1,
-      "other": 6,
       "newsletter": 1
     },
     "task_count": 5,
     "event_count": 7,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Matt Ganzak, 1 from Steven Cravotta, 1 from Maria Wendt | Categories: 8 work, 6 other, 2 finance | \u26a1 5 tasks detected",
-    "hourly_summary": "No new emails in the last hour.",
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report | Categories: 9 work, 5 other, 2 finance | \u26a1 5 tasks detected",
+    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report | Categories: 1 finance, 1 other, 1 work",
     "bullet_summary": [
+      "\ud83d\udce7 **Finimize Daily**: \ud83d\udcb0 The money-making metal",
+      "\ud83d\udce7 **Arto from 10Web**: \ud83e\udd9e OpenClaw + OpenAI | the $30B raise | physical robots",
+      "\ud83d\udce7 **The AI Report**: ChatGPT Ads Just Changed the Business Model of AI",
       "\ud83d\udce7 **Matt Ganzak**: Aarya.banthia, Do these 3 things before lunch",
       "\ud83d\udce7 **Steven Cravotta**: Why I didn't quit when my app was struggling",
       "\ud83d\udce7 **Maria Wendt**: opportunity to work with us, Aarya",
       "\ud83d\udce7 **Serge Gatari**: Hormozi just told an agency owner",
       "\ud83c\udf89 **\"Chase AI Community (Skool)\"**: New account/setup - 1 new notification since 12:59 am (Feb 18, 2026)",
       "\ud83d\udce7 **Milk Road**: \ud83e\udd5b Where \u2018early money\u2019 is flowing rn\ud83d\udcb0",
-      "\ud83d\udce7 **Guillermo Flor from Product...**: Carles Reina $300M ARR ElevenLabs Sales Playbook",
-      "\ud83c\udf89 **\"Topaz Labs\"**: New account/setup - NEW models do this \ud83d\udc40",
-      "\ud83d\udce7 **\"Eric at Bolt.new\"**: Claude Sonnet 4.6 just landed in Bolt",
-      "\ud83d\udce7 **Orchids Team**: Claude Sonnet 4.6 available + Major Credit Usage Improvements"
+      "\ud83d\udce7 **Guillermo Flor from Product...**: Carles Reina $300M ARR ElevenLabs Sales Playbook"
     ]
   },
   "emails": [
+    {
+      "id": "21721",
+      "subject": "\ud83d\udcb0 The money-making metal",
+      "from": "Finimize Daily",
+      "date": "Tue, 17 Feb 2026 18:18:11 -0500 (EST)",
+      "category": "finance",
+      "tasks": [],
+      "events": [],
+      "preview": "",
+      "ai_summary": "Notification from Finimize Daily. Review contents for any important information."
+    },
+    {
+      "id": "21720",
+      "subject": "\ud83e\udd9e OpenClaw + OpenAI | the $30B raise | physical robots",
+      "from": "Arto from 10Web",
+      "date": "Wed, 18 Feb 2026 03:13:20 +0400",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "Agents go mainstream, enterprise AI scales to $380B, and robots enter the race.\u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f...",
+      "ai_summary": "Notification from Arto from 10Web. Review contents for any important information."
+    },
+    {
+      "id": "21719",
+      "subject": "ChatGPT Ads Just Changed the Business Model of AI",
+      "from": "The AI Report",
+      "date": "Tue, 17 Feb 2026 23:03:18 +0000 (UTC)",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "----------\r View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5b4c09d3-0c...",
+      "ai_summary": "Notification from The AI Report. Review contents for any important information."
+    },
     {
       "id": "21718",
       "subject": "Aarya.banthia, Do these 3 things before lunch",
@@ -257,46 +290,13 @@
       ],
       "preview": "Most businesses don\u2019t need more leads. They need to answer the ones they already get.\r \r In my new YouTube video, I show how to go from zero to a live...",
       "ai_summary": "Notification from Rahul Jindal. Review contents for any important information."
-    },
-    {
-      "id": "21701",
-      "subject": "Saleor didn't pivot into AI",
-      "from": "Mirek from Saleor",
-      "date": "Tue, 17 Feb 2026 16:21:19 +0000",
-      "category": "finance",
-      "tasks": [],
-      "events": [],
-      "preview": "Introducing Open AI Commerce \u2014 End-to-end Open AI Commerce Stack\r Announcement\r \r \r ** The Open End-to-End AI Commerce Stack\r ------------------------...",
-      "ai_summary": "Notification from Mirek from Saleor. Review contents for any important information."
-    },
-    {
-      "id": "21700",
-      "subject": "How to optimize E-commerce for AI search",
-      "from": "Neil Patel",
-      "date": "Tue, 17 Feb 2026 16:08:22 +0000 (UTC)",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "AI has changed how products get discovered.\r \r Just ask yourself, have you ever bought anything based on a\r recommendation from ChatGPT?\r \r There\u2019s a...",
-      "ai_summary": "Notification from Neil Patel. Review contents for any important information."
-    },
-    {
-      "id": "21699",
-      "subject": "\u2b06\ufe0f\u00a0UK Unemployment Nears Covid High",
-      "from": "AmplifyME",
-      "date": "Tue, 17 Feb 2026 15:52:43 GMT",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "UK unemployment at 5-yr high paves way for rate cuts and Warner Bros. re-opens talks with Paramount.\u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f...",
-      "ai_summary": "Notification from AmplifyME. Review contents for any important information."
     }
   ],
   "tasks": [
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Answer the ones they already get",
     "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)",
     "Save my email address to your contacts, if interested",
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Update to version 1"
   ],
   "events": [
@@ -329,9 +329,9 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T07:00:13.486973",
+  "last_updated": "2026-02-18T08:00:23.905734",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Matt Ganzak, 1 from Steven Cravotta, 1 from Maria Wendt. 4 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report. 4 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
