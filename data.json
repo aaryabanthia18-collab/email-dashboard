@@ -2,30 +2,88 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "other": 6,
       "work": 9,
-      "newsletter": 2,
-      "finance": 2,
-      "personal": 1
+      "other": 7,
+      "newsletter": 3,
+      "finance": 1
     },
-    "task_count": 3,
-    "event_count": 7,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR | Categories: 9 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
-    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR | Categories: 3 work, 1 other",
+    "task_count": 2,
+    "event_count": 9,
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Vaibhav Sisinty, 1 from TLDR Dev, 1 from TLDR Marketing | Categories: 9 work, 7 other, 3 newsletter | \u26a1 2 tasks detected",
+    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from Vaibhav Sisinty, 1 from TLDR Dev, 1 from TLDR Marketing | Categories: 2 work, 1 other, 1 newsletter",
     "bullet_summary": [
+      "\ud83d\udce7 **Vaibhav Sisinty**: [GUIDE] AI Agent in 10 mins",
+      "\ud83d\udce7 **TLDR Dev**: Claude Sonnet 4.6 \ud83d\ude80, how Codex is built\ud83e\uddf1, HackMyClaw \ud83e\udd9e",
+      "\ud83d\udce7 **TLDR Marketing**: Snap creator subscriptions \ud83d\udc7b, paywall A/B test result \ud83d\udcca, question mining\ud83d\udca1",
+      "\ud83c\udf89 **The AI Report**: New account/setup - Apple is planning three new AI wearables",
       "\ud83d\udce7 **The Daily Peel**: Diplomacy Makes Little Waves",
       "\ud83d\udce7 **Jason from Quant Science**: \ud83d\udea8 We\u2019re live in 3 hours\u2014get your (free) spot now",
       "\ud83d\udce7 **TLDR**: Apple wearables \ud83d\udc53, Tesla's first Cybercab\ud83d\ude95, state of coding agents\ud83e\uddd1\u200d\ud83d\udcbb",
       "\ud83d\udce7 **The Rundown AI**: \ud83d\udcc8 Anthropic's powerful Sonnet upgrade nears flagship",
       "\ud83d\udce7 **\"Carl - CEO, Finimize\"**: UK investors: your opinion is needed",
-      "\ud83d\udce7 **Dribbble**: \u26f7\ufe0f\u00a0The Winter (design) Olympics",
-      "\ud83d\udce7 **TechTalk UK**: CC69: Is AI going to replace your job?",
-      "\ud83d\udce7 **Devansh from Artificial Int...**: How I taught myself to get cutting edge in AI",
-      "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
-      "\ud83d\udce7 **Bubble**: Episode 3: How Vai built 55K YouTube subs to drive app growth"
+      "\ud83d\udce7 **Dribbble**: \u26f7\ufe0f\u00a0The Winter (design) Olympics"
     ]
   },
   "emails": [
+    {
+      "id": "21739",
+      "subject": "[GUIDE] AI Agent in 10 mins",
+      "from": "Vaibhav Sisinty",
+      "date": "Wed, 18 Feb 2026 12:56:39 +0000 (UTC)",
+      "category": "work",
+      "tasks": [],
+      "events": [
+        {
+          "type": "call",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a35eae18-c29f-48f5-a62d...",
+      "ai_summary": "Notification from Vaibhav Sisinty. Review contents for any important information."
+    },
+    {
+      "id": "21738",
+      "subject": "Claude Sonnet 4.6 \ud83d\ude80, how Codex is built\ud83e\uddf1, HackMyClaw \ud83e\udd9e",
+      "from": "TLDR Dev",
+      "date": "Wed, 18 Feb 2026 12:32:30 +0000",
+      "category": "other",
+      "tasks": [],
+      "events": [
+        {
+          "type": "teams",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "Claude Sonnet 4.6 is a major upgrade that improves its capabilities in\r coding, computer use, long-context reasoning, and agent\r planning\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR Dev. Review contents for any important information."
+    },
+    {
+      "id": "21737",
+      "subject": "Snap creator subscriptions \ud83d\udc7b, paywall A/B test result \ud83d\udcca, question mining\ud83d\udca1",
+      "from": "TLDR Marketing",
+      "date": "Wed, 18 Feb 2026 12:23:03 +0000",
+      "category": "newsletter",
+      "tasks": [],
+      "events": [
+        {
+          "type": "webinar",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "Snapchat is launching Creator Subscriptions to give creators recurring\r income and give fans paid access to exclusive content and ad-free\r Stories\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR Marketing. Review contents for any important information."
+    },
+    {
+      "id": "21736",
+      "subject": "Apple is planning three new AI wearables",
+      "from": "The AI Report",
+      "date": "Wed, 18 Feb 2026 12:04:58 +0000 (UTC)",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "[ADVERTISE](https://www.theaireport.ai/partner) \u2022 [PODCASTS](https://www.youtube.com/@the-AI-report-with-liam-lawson/featured) \u2022 [ENTERPRISE TRAINING]...",
+      "ai_summary": "Notification from The AI Report. Review contents for any important information."
+    },
     {
       "id": "21735",
       "subject": "Diplomacy Makes Little Waves",
@@ -232,65 +290,25 @@
       "events": [],
       "preview": "Agents go mainstream, enterprise AI scales to $380B, and robots enter the race.\u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f...",
       "ai_summary": "Notification from Arto from 10Web. Review contents for any important information."
-    },
-    {
-      "id": "21719",
-      "subject": "ChatGPT Ads Just Changed the Business Model of AI",
-      "from": "The AI Report",
-      "date": "Tue, 17 Feb 2026 23:03:18 +0000 (UTC)",
-      "category": "work",
-      "tasks": [],
-      "events": [],
-      "preview": "----------\r View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5b4c09d3-0c...",
-      "ai_summary": "Notification from The AI Report. Review contents for any important information."
-    },
-    {
-      "id": "21718",
-      "subject": "Aarya.banthia, Do these 3 things before lunch",
-      "from": "Matt Ganzak",
-      "date": "Tue, 17 Feb 2026 21:50:31 +0000",
-      "category": "finance",
-      "tasks": [],
-      "events": [
-        {
-          "type": "call",
-          "details": "Detected in email"
-        }
-      ],
-      "preview": "The 15-minute security fixes that prevent 90% of breaches\r \r HeyAarya.banthia,\r \r Yesterday I sent you the full security hardening walkthrough. If you...",
-      "ai_summary": "Notification from Matt Ganzak. Review contents for any important information."
-    },
-    {
-      "id": "21717",
-      "subject": "Why I didn't quit when my app was struggling",
-      "from": "Steven Cravotta",
-      "date": "Tue, 17 Feb 2026 21:17:54 +0000",
-      "category": "personal",
-      "tasks": [],
-      "events": [],
-      "preview": "Hey Aarya,  When I first started Puff Count (now acquired), I was struggling. I was making lots of mistakes and couldn\u2019t generate serious revenue.  Bu...",
-      "ai_summary": "Notification from Steven Cravotta. Review contents for any important information."
-    },
-    {
-      "id": "21716",
-      "subject": "opportunity to work with us, Aarya",
-      "from": "Maria Wendt",
-      "date": "Tue, 17 Feb 2026 21:03:53 +0000 (GMT)",
-      "category": "work",
-      "tasks": [
-        "Save my email address to your contacts, if interested"
-      ],
-      "events": [],
-      "preview": "good fit?Aarya, \r \r Tomorrow, Feb 18th, at 9am EST, I\u2019ll be emailing you details about working with us here at Team Maria.\r \r Mark your calendar and m...",
-      "ai_summary": "Notification from Maria Wendt. Review contents for any important information."
     }
   ],
   "tasks": [
     "Replace the pdf you linked to",
-    "Save my email address to your contacts, if interested",
     "Stay relevant in 2026 most people think ai is going to replace your job"
   ],
   "events": [
+    {
+      "type": "call",
+      "details": "Detected in email"
+    },
+    {
+      "type": "teams",
+      "details": "Detected in email"
+    },
+    {
+      "type": "webinar",
+      "details": "Detected in email"
+    },
     {
       "type": "call",
       "details": "Detected in email"
@@ -314,15 +332,11 @@
     {
       "type": "call",
       "details": "Detected in email"
-    },
-    {
-      "type": "call",
-      "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T20:00:37.795667",
+  "last_updated": "2026-02-18T21:00:40.115291",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR. 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Vaibhav Sisinty, 1 from TLDR Dev, 1 from TLDR Marketing. 2 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
