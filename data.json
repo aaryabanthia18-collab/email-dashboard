@@ -12,7 +12,7 @@
     "task_count": 4,
     "event_count": 6,
     "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Medium Daily Digest, 1 from Finimize Daily, 1 from Arto from 10Web | Categories: 9 work, 4 other, 2 newsletter | \u26a1 4 tasks detected",
-    "hourly_summary": "\ud83d\udce7 1 new email | Top: 1 from Medium Daily Digest | Categories: 1 newsletter",
+    "hourly_summary": "No new emails in the last hour.",
     "bullet_summary": [
       "\ud83d\udce7 **Medium Daily Digest**: How I Use Options For Small Daily Cash With Minimum Risk | Sips &\r\n Scale",
       "\ud83d\udce7 **Finimize Daily**: \ud83d\udcb0 The money-making metal",
@@ -287,9 +287,9 @@
   ],
   "tasks": [
     "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)",
-    "Save my email address to your contacts, if interested",
     "Update to version 1",
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)"
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
+    "Save my email address to your contacts, if interested"
   ],
   "events": [
     {
@@ -317,7 +317,7 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T11:00:17.182289",
+  "last_updated": "2026-02-18T12:00:22.305806",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Medium Daily Digest, 1 from Finimize Daily, 1 from Arto from 10Web. 3 emails may contain action items.",
     "total_emails": 20,
