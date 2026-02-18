@@ -12,7 +12,7 @@
     "task_count": 5,
     "event_count": 7,
     "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report | Categories: 9 work, 5 other, 2 finance | \u26a1 5 tasks detected",
-    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report | Categories: 1 finance, 1 other, 1 work",
+    "hourly_summary": "No new emails in the last hour.",
     "bullet_summary": [
       "\ud83d\udce7 **Finimize Daily**: \ud83d\udcb0 The money-making metal",
       "\ud83d\udce7 **Arto from 10Web**: \ud83e\udd9e OpenClaw + OpenAI | the $30B raise | physical robots",
@@ -293,11 +293,11 @@
     }
   ],
   "tasks": [
-    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
+    "Update to version 1",
     "Answer the ones they already get",
+    "CodeRabbit reviews 1 million PRs every week across 3 million repositories and is used (Due 100 thousand Open-source projects)",
     "Cloudflare has reduced cold start delays in its Workers platform (Due 10 times through a technique called worker sharding)",
-    "Save my email address to your contacts, if interested",
-    "Update to version 1"
+    "Save my email address to your contacts, if interested"
   ],
   "events": [
     {
@@ -329,7 +329,7 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T08:00:23.905734",
+  "last_updated": "2026-02-18T09:00:24.619932",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Finimize Daily, 1 from Arto from 10Web, 1 from The AI Report. 4 emails may contain action items.",
     "total_emails": 20,
