@@ -2,31 +2,83 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "other": 5,
-      "newsletter": 2,
+      "other": 6,
       "work": 9,
+      "newsletter": 2,
       "finance": 2,
-      "personal": 1,
-      "social": 1
+      "personal": 1
     },
     "task_count": 3,
     "event_count": 7,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK | Categories: 9 work, 5 other, 2 newsletter | \u26a1 3 tasks detected",
-    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK | Categories: 1 other, 1 newsletter, 1 work | \u26a1 1 task detected",
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR | Categories: 9 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
+    "hourly_summary": "\ud83d\udce7 4 new emails | Top: 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR | Categories: 3 work, 1 other",
     "bullet_summary": [
+      "\ud83d\udce7 **The Daily Peel**: Diplomacy Makes Little Waves",
+      "\ud83d\udce7 **Jason from Quant Science**: \ud83d\udea8 We\u2019re live in 3 hours\u2014get your (free) spot now",
+      "\ud83d\udce7 **TLDR**: Apple wearables \ud83d\udc53, Tesla's first Cybercab\ud83d\ude95, state of coding agents\ud83e\uddd1\u200d\ud83d\udcbb",
+      "\ud83d\udce7 **The Rundown AI**: \ud83d\udcc8 Anthropic's powerful Sonnet upgrade nears flagship",
       "\ud83d\udce7 **\"Carl - CEO, Finimize\"**: UK investors: your opinion is needed",
       "\ud83d\udce7 **Dribbble**: \u26f7\ufe0f\u00a0The Winter (design) Olympics",
       "\ud83d\udce7 **TechTalk UK**: CC69: Is AI going to replace your job?",
       "\ud83d\udce7 **Devansh from Artificial Int...**: How I taught myself to get cutting edge in AI",
       "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
-      "\ud83d\udce7 **Bubble**: Episode 3: How Vai built 55K YouTube subs to drive app growth",
-      "\ud83c\udf89 **\"@digitalSamaritan\"**: New account/setup - Welcome to Practically AI",
-      "\ud83c\udf89 **Luke at QR Code Generator**: New account/setup - Welcome to QR Code Generator!",
-      "\ud83d\udce7 **\"QR-Code.io\"**: Your QR Code Is Attached",
-      "\ud83d\udce7 **Medium Daily Digest**: How I Use Options For Small Daily Cash With Minimum Risk | Sips &\r\n Scale"
+      "\ud83d\udce7 **Bubble**: Episode 3: How Vai built 55K YouTube subs to drive app growth"
     ]
   },
   "emails": [
+    {
+      "id": "21735",
+      "subject": "Diplomacy Makes Little Waves",
+      "from": "The Daily Peel",
+      "date": "Wed, 18 Feb 2026 11:51:01 +0000 (UTC)",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "----------\r View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/93826315-62...",
+      "ai_summary": "Notification from The Daily Peel. Review contents for any important information."
+    },
+    {
+      "id": "21734",
+      "subject": "\ud83d\udea8 We\u2019re live in 3 hours\u2014get your (free) spot now",
+      "from": "Jason from Quant Science",
+      "date": "Wed, 18 Feb 2026 11:29:55 +0000 (UTC)",
+      "category": "work",
+      "tasks": [],
+      "events": [
+        {
+          "type": "call",
+          "details": "Detected in email"
+        },
+        {
+          "type": "webinar",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "(\r https://c060ebae.click.convertkit-mail2.com/8ku7275nrrb2s2l0x8igskggqg99c3hx52g4/7qh7h2u93kp6wziz/aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1SelR5b...",
+      "ai_summary": "Notification from Jason from Quant Science. Review contents for any important information."
+    },
+    {
+      "id": "21733",
+      "subject": "Apple wearables \ud83d\udc53, Tesla's first Cybercab\ud83d\ude95, state of coding agents\ud83e\uddd1\u200d\ud83d\udcbb",
+      "from": "TLDR",
+      "date": "Wed, 18 Feb 2026 11:27:44 +0000",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "Apple is accelerating development on smart glasses, a pendant that can\r be pinned to a shirt, and AirPods with expanded AI\r capabilities\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c\u00a0\u200c...",
+      "ai_summary": "Notification from TLDR. Review contents for any important information."
+    },
+    {
+      "id": "21732",
+      "subject": "\ud83d\udcc8 Anthropic's powerful Sonnet upgrade nears flagship",
+      "from": "The Rundown AI",
+      "date": "Wed, 18 Feb 2026 11:08:11 +0000 (UTC)",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "^**[Read Online](https://www.therundown.ai/p/anthropics-mid-tier-model-punches-up?_bhlid=4eaa234680798ad3bdb45514b5705f029891f88c&jwt_token=eyJ0eXAiOi...",
+      "ai_summary": "Notification from The Rundown AI. Review contents for any important information."
+    },
     {
       "id": "21731",
       "subject": "UK investors: your opinion is needed",
@@ -231,68 +283,22 @@
       "events": [],
       "preview": "good fit?Aarya, \r \r Tomorrow, Feb 18th, at 9am EST, I\u2019ll be emailing you details about working with us here at Team Maria.\r \r Mark your calendar and m...",
       "ai_summary": "Notification from Maria Wendt. Review contents for any important information."
-    },
-    {
-      "id": "21715",
-      "subject": "Hormozi just told an agency owner",
-      "from": "Serge Gatari",
-      "date": "Tue, 17 Feb 2026 21:05:14 +0000 (GMT)",
-      "category": "work",
-      "tasks": [],
-      "events": [
-        {
-          "type": "call",
-          "details": "Detected in email"
-        }
-      ],
-      "preview": "80% of his business can be automated by AIAar,\r \r I was on Instagram earlier today and saw a reel of Hormozi telling an ads agency owner that 80% of h...",
-      "ai_summary": "Notification from Serge Gatari. Review contents for any important information."
-    },
-    {
-      "id": "21714",
-      "subject": "1 new notification since 12:59 am (Feb 18, 2026)",
-      "from": "\"Chase AI Community (Skool)\"",
-      "date": "Tue, 17 Feb 2026 20:29:10 +0000 (UTC)",
-      "category": "social",
-      "tasks": [],
-      "events": [],
-      "preview": "Chase AI Community\r \r ( https://link.skool.com/ls/click?upn=u001.wK6x93jhdVos-2F3TofGJCJqYIach7-2FtMhH3n-2Fh9qG9l0GnWL4PQOS-2FZ5VkS4LpRux6cLnt8iwWzM...",
-      "ai_summary": "Notification from \"Chase AI Community (Skool)\". Review contents for any important information."
-    },
-    {
-      "id": "21713",
-      "subject": "\ud83e\udd5b Where \u2018early money\u2019 is flowing rn\ud83d\udcb0",
-      "from": "Milk Road",
-      "date": "Tue, 17 Feb 2026 20:01:35 +0000 (UTC)",
-      "category": "work",
-      "tasks": [],
-      "events": [],
-      "preview": "View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4206f16d-8bb6-4f2f-8221...",
-      "ai_summary": "Notification from Milk Road. Review contents for any important information."
-    },
-    {
-      "id": "21712",
-      "subject": "Carles Reina $300M ARR ElevenLabs Sales Playbook",
-      "from": "Guillermo Flor from Product...",
-      "date": "Tue, 17 Feb 2026 19:46:36 +0000",
-      "category": "work",
-      "tasks": [],
-      "events": [
-        {
-          "type": "teams",
-          "details": "Detected in email"
-        }
-      ],
-      "preview": "View this post on the web at https://www.productmarketfit.tech/p/carles-reina-300m-arr-elevenlabs\r \r In roughly ~3 years, ElevenLabs reached ~$330M AR...",
-      "ai_summary": "Notification from Guillermo Flor from Product.... Review contents for any important information."
     }
   ],
   "tasks": [
-    "Stay relevant in 2026 most people think ai is going to replace your job",
+    "Replace the pdf you linked to",
     "Save my email address to your contacts, if interested",
-    "Replace the pdf you linked to"
+    "Stay relevant in 2026 most people think ai is going to replace your job"
   ],
   "events": [
+    {
+      "type": "call",
+      "details": "Detected in email"
+    },
+    {
+      "type": "webinar",
+      "details": "Detected in email"
+    },
     {
       "type": "call",
       "details": "Detected in email"
@@ -312,19 +318,11 @@
     {
       "type": "call",
       "details": "Detected in email"
-    },
-    {
-      "type": "call",
-      "details": "Detected in email"
-    },
-    {
-      "type": "teams",
-      "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T19:00:13.306845",
+  "last_updated": "2026-02-18T20:00:37.795667",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK. 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from The Daily Peel, 1 from Jason from Quant Science, 1 from TLDR. 3 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
