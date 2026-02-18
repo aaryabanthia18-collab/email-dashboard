@@ -2,31 +2,79 @@
   "summary": {
     "total_emails": 20,
     "categories": {
-      "work": 8,
-      "other": 6,
+      "other": 5,
       "newsletter": 2,
+      "work": 9,
       "finance": 2,
       "personal": 1,
       "social": 1
     },
     "task_count": 3,
-    "event_count": 4,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble | Categories: 8 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
-    "hourly_summary": "No new emails in the last hour.",
+    "event_count": 7,
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK | Categories: 9 work, 5 other, 2 newsletter | \u26a1 3 tasks detected",
+    "hourly_summary": "\ud83d\udce7 3 new emails | Top: 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK | Categories: 1 other, 1 newsletter, 1 work | \u26a1 1 task detected",
     "bullet_summary": [
+      "\ud83d\udce7 **\"Carl - CEO, Finimize\"**: UK investors: your opinion is needed",
+      "\ud83d\udce7 **Dribbble**: \u26f7\ufe0f\u00a0The Winter (design) Olympics",
+      "\ud83d\udce7 **TechTalk UK**: CC69: Is AI going to replace your job?",
       "\ud83d\udce7 **Devansh from Artificial Int...**: How I taught myself to get cutting edge in AI",
       "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
       "\ud83d\udce7 **Bubble**: Episode 3: How Vai built 55K YouTube subs to drive app growth",
       "\ud83c\udf89 **\"@digitalSamaritan\"**: New account/setup - Welcome to Practically AI",
       "\ud83c\udf89 **Luke at QR Code Generator**: New account/setup - Welcome to QR Code Generator!",
       "\ud83d\udce7 **\"QR-Code.io\"**: Your QR Code Is Attached",
-      "\ud83d\udce7 **Medium Daily Digest**: How I Use Options For Small Daily Cash With Minimum Risk | Sips &\r\n Scale",
-      "\ud83d\udce7 **Finimize Daily**: \ud83d\udcb0 The money-making metal",
-      "\ud83d\udce7 **Arto from 10Web**: \ud83e\udd9e OpenClaw + OpenAI | the $30B raise | physical robots",
-      "\ud83d\udce7 **The AI Report**: ChatGPT Ads Just Changed the Business Model of AI"
+      "\ud83d\udce7 **Medium Daily Digest**: How I Use Options For Small Daily Cash With Minimum Risk | Sips &\r\n Scale"
     ]
   },
   "emails": [
+    {
+      "id": "21731",
+      "subject": "UK investors: your opinion is needed",
+      "from": "\"Carl - CEO, Finimize\"",
+      "date": "Wed, 18 Feb 2026 05:39:32 -0500 (EST)",
+      "category": "other",
+      "tasks": [],
+      "events": [],
+      "preview": "",
+      "ai_summary": "Notification from \"Carl - CEO, Finimize\". Review contents for any important information."
+    },
+    {
+      "id": "21730",
+      "subject": "\u26f7\ufe0f\u00a0The Winter (design) Olympics",
+      "from": "Dribbble",
+      "date": "Wed, 18 Feb 2026 10:27:30 +0000",
+      "category": "newsletter",
+      "tasks": [],
+      "events": [],
+      "preview": "What Milano Cortina 2026 is teaching us about visual storytelling, + tactile branding trends & a modular energy identity worth studying. \u200c \u200c \u200c \u200c \u200c \u200c \u200c...",
+      "ai_summary": "Notification from Dribbble. Review contents for any important information."
+    },
+    {
+      "id": "21729",
+      "subject": "CC69: Is AI going to replace your job?",
+      "from": "TechTalk UK",
+      "date": "Wed, 18 Feb 2026 10:00:19 +0000",
+      "category": "work",
+      "tasks": [
+        "Stay relevant in 2026 most people think ai is going to replace your job"
+      ],
+      "events": [
+        {
+          "type": "call",
+          "details": "Detected in email"
+        },
+        {
+          "type": "teams",
+          "details": "Detected in email"
+        },
+        {
+          "type": "webinar",
+          "details": "Detected in email"
+        }
+      ],
+      "preview": "Hi Aar \ud83d\udc4b,\r \r Welcome back to the Career Compass, your weekly dose of tips to help you level up your application, get seen and get promoted.\r \r Joana &...",
+      "ai_summary": "Notification from TechTalk UK. Review contents for any important information."
+    },
     {
       "id": "21728",
       "subject": "How I taught myself to get cutting edge in AI",
@@ -237,49 +285,26 @@
       ],
       "preview": "View this post on the web at https://www.productmarketfit.tech/p/carles-reina-300m-arr-elevenlabs\r \r In roughly ~3 years, ElevenLabs reached ~$330M AR...",
       "ai_summary": "Notification from Guillermo Flor from Product.... Review contents for any important information."
-    },
-    {
-      "id": "21711",
-      "subject": "NEW models do this \ud83d\udc40",
-      "from": "\"Topaz Labs\"",
-      "date": "Tue, 17 Feb 2026 19:00:27 +0000",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Get better photo & video results with latest releases that prioritize fidel=\r ity & accuracy=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=...",
-      "ai_summary": "Notification from \"Topaz Labs\". Review contents for any important information."
-    },
-    {
-      "id": "21710",
-      "subject": "Claude Sonnet 4.6 just landed in Bolt",
-      "from": "\"Eric at Bolt.new\"",
-      "date": "Tue, 17 Feb 2026 10:56:53 -0800",
-      "category": "other",
-      "tasks": [],
-      "events": [],
-      "preview": "Your new daily driver is here\u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f \u2007\u034f...",
-      "ai_summary": "Notification from \"Eric at Bolt.new\". Review contents for any important information."
-    },
-    {
-      "id": "21709",
-      "subject": "Claude Sonnet 4.6 available + Major Credit Usage Improvements",
-      "from": "Orchids Team",
-      "date": "Tue, 17 Feb 2026 18:46:37 +0000",
-      "category": "newsletter",
-      "tasks": [
-        "Update to version 1"
-      ],
-      "events": [],
-      "preview": "Hi Aarya\r \u00a0\r Claude Sonnet 4.6 is now fully available for all Orchids users.\r \u00a0\r This is Anthropic\u2019s newest model and one of the most capable a...",
-      "ai_summary": "Notification from Orchids Team. Review contents for any important information."
     }
   ],
   "tasks": [
-    "Update to version 1",
+    "Stay relevant in 2026 most people think ai is going to replace your job",
     "Save my email address to your contacts, if interested",
     "Replace the pdf you linked to"
   ],
   "events": [
+    {
+      "type": "call",
+      "details": "Detected in email"
+    },
+    {
+      "type": "teams",
+      "details": "Detected in email"
+    },
+    {
+      "type": "webinar",
+      "details": "Detected in email"
+    },
     {
       "type": "call",
       "details": "Detected in email"
@@ -297,9 +322,9 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T18:00:26.003553",
+  "last_updated": "2026-02-18T19:00:13.306845",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble. 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from \"Carl - CEO, Finimize\", 1 from Dribbble, 1 from TechTalk UK. 3 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
