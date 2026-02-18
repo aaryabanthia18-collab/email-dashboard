@@ -2,18 +2,19 @@
   "summary": {
     "total_emails": 20,
     "categories": {
+      "work": 8,
       "other": 6,
-      "work": 7,
       "newsletter": 2,
       "finance": 2,
-      "personal": 2,
+      "personal": 1,
       "social": 1
     },
     "task_count": 3,
     "event_count": 4,
-    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Equal Opportunity, 1 from Bubble, 1 from \"@digitalSamaritan\" | Categories: 7 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
-    "hourly_summary": "\ud83d\udce7 2 new emails | Top: 1 from Equal Opportunity, 1 from Bubble | Categories: 1 other, 1 work",
+    "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble | Categories: 8 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
+    "hourly_summary": "\ud83d\udce7 2 new emails | Top: 1 from Devansh from Artificial Int..., 1 from Equal Opportunity | Categories: 1 work, 1 other",
     "bullet_summary": [
+      "\ud83d\udce7 **Devansh from Artificial Int...**: How I taught myself to get cutting edge in AI",
       "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
       "\ud83d\udce7 **Bubble**: Episode 3: How Vai built 55K YouTube subs to drive app growth",
       "\ud83c\udf89 **\"@digitalSamaritan\"**: New account/setup - Welcome to Practically AI",
@@ -22,11 +23,21 @@
       "\ud83d\udce7 **Medium Daily Digest**: How I Use Options For Small Daily Cash With Minimum Risk | Sips &\r\n Scale",
       "\ud83d\udce7 **Finimize Daily**: \ud83d\udcb0 The money-making metal",
       "\ud83d\udce7 **Arto from 10Web**: \ud83e\udd9e OpenClaw + OpenAI | the $30B raise | physical robots",
-      "\ud83d\udce7 **The AI Report**: ChatGPT Ads Just Changed the Business Model of AI",
-      "\ud83d\udce7 **Matt Ganzak**: Aarya.banthia, Do these 3 things before lunch"
+      "\ud83d\udce7 **The AI Report**: ChatGPT Ads Just Changed the Business Model of AI"
     ]
   },
   "emails": [
+    {
+      "id": "21728",
+      "subject": "How I taught myself to get cutting edge in AI",
+      "from": "Devansh from Artificial Int...",
+      "date": "Wed, 18 Feb 2026 08:05:04 +0000",
+      "category": "work",
+      "tasks": [],
+      "events": [],
+      "preview": "View this post on the web at https://www.artificialintelligencemadesimple.com/p/how-i-taught-myself-to-get-cutting-698\r \r Been getting a lot of messag...",
+      "ai_summary": "Notification from Devansh from Artificial Int.... Review contents for any important information."
+    },
     {
       "id": "21727",
       "subject": "\ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
@@ -261,23 +272,12 @@
       "events": [],
       "preview": "Hi Aarya\r \u00a0\r Claude Sonnet 4.6 is now fully available for all Orchids users.\r \u00a0\r This is Anthropic\u2019s newest model and one of the most capable a...",
       "ai_summary": "Notification from Orchids Team. Review contents for any important information."
-    },
-    {
-      "id": "21708",
-      "subject": "\ud83d\udca5 OpenAI's biggest ally just left",
-      "from": "OpenTools",
-      "date": "Tue, 17 Feb 2026 18:03:46 +0000 (UTC)",
-      "category": "personal",
-      "tasks": [],
-      "events": [],
-      "preview": "View image: (https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e39aad96-f0c2-4784-8a8b...",
-      "ai_summary": "Notification from OpenTools. Review contents for any important information."
     }
   ],
   "tasks": [
+    "Save my email address to your contacts, if interested",
     "Update to version 1",
-    "Replace the pdf you linked to",
-    "Save my email address to your contacts, if interested"
+    "Replace the pdf you linked to"
   ],
   "events": [
     {
@@ -297,9 +297,9 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T16:01:26.914005",
+  "last_updated": "2026-02-18T17:00:26.211201",
   "ai_summary": {
-    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Equal Opportunity, 1 from Bubble, 1 from \"@digitalSamaritan\". 3 emails may contain action items.",
+    "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble. 3 emails may contain action items.",
     "total_emails": 20,
     "executive_briefing": "Good afternoon! I've reviewed your inbox and here's what's waiting for you today. You have 12 new emails with a notable concentration of technical activity\u2014GitHub and Vercel are your top senders with platform setup and configuration notifications. The most urgent item requiring your attention is a failed production deployment on Vercel that you'll want to investigate and resolve promptly. On the security front, there are several authentication-related notifications from GitHub including a new personal access token and SSH key being added, plus a new Vercel sign-in detection\u2014all of which appear to be legitimate given the context of setting up OpenClaw, but worth verifying were intentional. Beyond the technical items, your inbox includes the usual mix of newsletters from Medium, Neil Patel, and Finimize, a social notification from the Chase AI Community, and some promotional content. No specific meetings or calls are flagged in today's batch, so your calendar appears clear for focused work on resolving that deployment issue and reviewing your recent security configurations."
   }
