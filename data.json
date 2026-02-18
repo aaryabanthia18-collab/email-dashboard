@@ -12,7 +12,7 @@
     "task_count": 3,
     "event_count": 4,
     "tldr": "\ud83d\udce7 20 new emails | Top: 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble | Categories: 8 work, 6 other, 2 newsletter | \u26a1 3 tasks detected",
-    "hourly_summary": "\ud83d\udce7 2 new emails | Top: 1 from Devansh from Artificial Int..., 1 from Equal Opportunity | Categories: 1 work, 1 other",
+    "hourly_summary": "No new emails in the last hour.",
     "bullet_summary": [
       "\ud83d\udce7 **Devansh from Artificial Int...**: How I taught myself to get cutting edge in AI",
       "\ud83d\udce7 **Equal Opportunity**: \ud83d\udce9 [Invite] SJT and Interviews Masterclass with a Stephenson Harwood Trainee",
@@ -275,8 +275,8 @@
     }
   ],
   "tasks": [
-    "Save my email address to your contacts, if interested",
     "Update to version 1",
+    "Save my email address to your contacts, if interested",
     "Replace the pdf you linked to"
   ],
   "events": [
@@ -297,7 +297,7 @@
       "details": "Detected in email"
     }
   ],
-  "last_updated": "2026-02-18T17:00:26.211201",
+  "last_updated": "2026-02-18T18:00:26.003553",
   "ai_summary": {
     "overall_summary": "You have 20 emails in your inbox. Most are from 1 from Devansh from Artificial Int..., 1 from Equal Opportunity, 1 from Bubble. 3 emails may contain action items.",
     "total_emails": 20,
